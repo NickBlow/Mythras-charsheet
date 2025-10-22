@@ -1,0 +1,19 @@
+{
+  "include": ["react-router.config.ts", "vite.config.ts"],
+  "compilerOptions": {
+    "composite": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "types": ["node"],
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./app/*"]
+    },
+    "tsBuildInfoFile": "node_modules/.cache/tsconfig.node/tsconfig.tsbuildinfo"
+  }
+}

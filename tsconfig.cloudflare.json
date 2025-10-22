@@ -1,0 +1,31 @@
+{
+  "include": [
+    "app",
+    "workers",
+    "worker-configuration.d.ts"
+  ],
+  "compilerOptions": {
+    "lib": ["DOM", "DOM.Iterable", "ES2022"],
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "resolveJsonModule": true,
+    "target": "ES2022",
+    "strict": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./app/*"]
+    },
+    "types": [
+      "@cloudflare/workers-types",
+      "vite/client"
+    ],
+    "noEmit": true,
+    "tsBuildInfoFile": "node_modules/.cache/tsconfig.cloudflare/tsconfig.tsbuildinfo"
+  }
+}

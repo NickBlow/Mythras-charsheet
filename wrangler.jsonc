@@ -1,0 +1,30 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "mythras-sw-sheet",
+  "compatibility_date": "2025-02-24",
+  "main": "./workers/app.ts",
+  "assets": {},
+  "vars": {
+    "VALUE_FROM_CLOUDFLARE": "Hello from Cloudflare"
+  },
+  "routes": [
+    {
+      "pattern": "mythras.familiar.games",
+      "custom_domain": true
+    }
+  ],
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "SHEET_STORE",
+        "class_name": "SheetStore"
+      }
+    ]
+  },
+  "migrations": [
+    {
+      "tag": "v1",
+      "new_sqlite_classes": ["SheetStore"]
+    }
+  ]
+}
