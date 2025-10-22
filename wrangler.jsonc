@@ -9,7 +9,7 @@
   },
   "routes": [
     {
-      "pattern": "mythras.familiar.games",
+      "pattern": "mythras-sw.familiar.games",
       "custom_domain": true
     }
   ],

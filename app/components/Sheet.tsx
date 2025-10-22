@@ -80,6 +80,7 @@ const MythrasCharacterSheet = ({
     const data = charData || {
       info: {
         name: "",
+        race: "",
         culture: "",
         careers: [],
         experienceRolls: 0,
@@ -137,9 +138,19 @@ const MythrasCharacterSheet = ({
     } else if (charData) {
       setCharacter(charData);
       lastSavedCharacterRef.current = JSON.stringify(charData);
+    } else {
+      // Initialize lastSavedCharacterRef for new characters with no data
+      lastSavedCharacterRef.current = JSON.stringify(character);
     }
     previousCharacterRef.current = JSON.stringify(charData);
   }, [charData]);
+
+  // Monitor fetcher state for image upload completion
+  useEffect(() => {
+    if (fetcher.state === "idle" && isImageUploading) {
+      setIsImageUploading(false);
+    }
+  }, [fetcher.state, isImageUploading]);
 
   // Save function
   const saveCharacter = useCallback(() => {
@@ -167,11 +178,16 @@ const MythrasCharacterSheet = ({
 
   // Autosave - only trigger when character actually changes
   useEffect(() => {
-    // Don't autosave on initial load
-    if (!lastSavedCharacterRef.current) return;
+    const characterString = JSON.stringify(character);
+
+    // Initialize lastSavedCharacterRef if it doesn't exist (for new characters)
+    if (!lastSavedCharacterRef.current) {
+      lastSavedCharacterRef.current = characterString;
+      // Don't autosave on the very first initialization
+      return;
+    }
 
     // Don't autosave if character hasn't changed from last saved state
-    const characterString = JSON.stringify(character);
     const hasChanges = characterString !== lastSavedCharacterRef.current;
     if (!hasChanges) return;
 
@@ -332,6 +348,7 @@ const MythrasCharacterSheet = ({
               updateInfo={updateInfo}
               characterImage={characterImage}
               onImageUpload={handleImageUpload}
+              isImageUploading={isImageUploading}
             />
           )}
           {activeTab === "stats" && (

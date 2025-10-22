@@ -5,6 +5,7 @@ interface InfoTabProps {
   updateInfo: (updates: any) => void;
   characterImage: string | null;
   onImageUpload: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  isImageUploading?: boolean;
 }
 
 const InfoTab = ({
@@ -12,6 +13,7 @@ const InfoTab = ({
   updateInfo,
   characterImage,
   onImageUpload,
+  isImageUploading = false,
 }: InfoTabProps) => {
   const handleCareerAdd = () => {
     updateInfo({
@@ -71,28 +73,56 @@ const InfoTab = ({
                   alt="Character"
                   className="w-full h-64 object-cover rounded-lg border border-cyan-500/30"
                 />
-                <label className="absolute inset-0 flex items-center justify-center bg-gray-900/80 opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer rounded-lg">
-                  <div className="flex flex-col items-center">
-                    <Upload className="w-8 h-8 mb-2 text-cyan-300" />
-                    <span className="text-cyan-300 text-sm">Change Image</span>
+                {isImageUploading ? (
+                  <div className="absolute inset-0 flex items-center justify-center bg-gray-900/80 rounded-lg">
+                    <div className="flex flex-col items-center">
+                      <div className="w-12 h-12 border-4 border-cyan-500/30 border-t-cyan-500 rounded-full animate-spin mb-3"></div>
+                      <span className="text-cyan-300 text-sm">
+                        Uploading...
+                      </span>
+                    </div>
                   </div>
-                  <input
-                    type="file"
-                    accept="image/*"
-                    onChange={onImageUpload}
-                    className="hidden"
-                  />
-                </label>
+                ) : (
+                  <label className="absolute inset-0 flex items-center justify-center bg-gray-900/80 opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer rounded-lg">
+                    <div className="flex flex-col items-center">
+                      <Upload className="w-8 h-8 mb-2 text-cyan-300" />
+                      <span className="text-cyan-300 text-sm">
+                        Change Image
+                      </span>
+                    </div>
+                    <input
+                      type="file"
+                      accept="image/*"
+                      onChange={onImageUpload}
+                      className="hidden"
+                      disabled={isImageUploading}
+                    />
+                  </label>
+                )}
               </div>
             ) : (
-              <label className="flex flex-col items-center justify-center w-full h-64 border-2 border-dashed border-cyan-500/30 rounded-lg cursor-pointer hover:border-cyan-500/50 transition-colors">
-                <Camera className="w-12 h-12 mb-3 text-cyan-500/50" />
-                <span className="text-cyan-300/70">Upload Character Image</span>
+              <label
+                className={`flex flex-col items-center justify-center w-full h-64 border-2 border-dashed border-cyan-500/30 rounded-lg transition-colors ${isImageUploading ? "cursor-default" : "cursor-pointer hover:border-cyan-500/50"}`}
+              >
+                {isImageUploading ? (
+                  <>
+                    <div className="w-12 h-12 border-4 border-cyan-500/30 border-t-cyan-500 rounded-full animate-spin mb-3"></div>
+                    <span className="text-cyan-300/70">Uploading...</span>
+                  </>
+                ) : (
+                  <>
+                    <Camera className="w-12 h-12 mb-3 text-cyan-500/50" />
+                    <span className="text-cyan-300/70">
+                      Upload Character Image
+                    </span>
+                  </>
+                )}
                 <input
                   type="file"
                   accept="image/*"
                   onChange={onImageUpload}
                   className="hidden"
+                  disabled={isImageUploading}
                 />
               </label>
             )}
@@ -112,6 +142,19 @@ const InfoTab = ({
             onChange={(e) => updateInfo({ name: e.target.value })}
             className="w-full px-3 py-2 bg-gray-800/50 border border-cyan-500/30 rounded-lg text-gray-100 focus:outline-none focus:border-cyan-500/50"
             placeholder="Enter character name..."
+          />
+        </div>
+
+        <div>
+          <label className="block text-sm font-medium text-cyan-300 mb-1">
+            Race
+          </label>
+          <input
+            type="text"
+            value={character.info.race || ""}
+            onChange={(e) => updateInfo({ race: e.target.value })}
+            className="w-full px-3 py-2 bg-gray-800/50 border border-cyan-500/30 rounded-lg text-gray-100 focus:outline-none focus:border-cyan-500/50"
+            placeholder="Human, Twi'lek, Zabrak, Droid..."
           />
         </div>
 
