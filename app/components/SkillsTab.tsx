@@ -21,7 +21,11 @@ const PROFESSIONAL_SKILLS = [
   { name: "Demolitions", formula: "INT+POW" },
   { name: "Disguise", formula: "INT+CHA" },
   { name: "Electronics", formula: "DEX+INT" },
-  { name: "Engineering", formula: "INT x2", note: "Large scale civil/military engineering" },
+  {
+    name: "Engineering",
+    formula: "INT x2",
+    note: "Large scale civil/military engineering",
+  },
   { name: "Forgery", formula: "DEX+INT" },
   { name: "Gambling", formula: "INT+POW" },
   { name: "Healing", formula: "INT+POW" },
@@ -54,8 +58,10 @@ const SkillsTab = ({ skills, updateCharacter }: SkillsTabProps) => {
     const skillToAdd = selectedProfSkill || newSkillName;
     if (!skillToAdd) return;
 
-    const profSkill = PROFESSIONAL_SKILLS.find(s => s.name === selectedProfSkill);
-    
+    const profSkill = PROFESSIONAL_SKILLS.find(
+      (s) => s.name === selectedProfSkill
+    );
+
     const newSkill = {
       id: Date.now(),
       name: skillToAdd,
@@ -87,7 +93,9 @@ const SkillsTab = ({ skills, updateCharacter }: SkillsTabProps) => {
   return (
     <div className="space-y-6">
       <div className="flex items-center justify-between">
-        <h3 className="text-xl font-bold text-cyan-300 glow-cyan">Professional Skills</h3>
+        <h3 className="text-xl font-bold text-cyan-300 glow-cyan">
+          Professional Skills
+        </h3>
         <button
           onClick={() => setShowAddSkill(true)}
           className="px-4 py-2 bg-cyan-600/20 border border-cyan-500/50 rounded-lg hover:bg-cyan-600/30 transition-colors flex items-center gap-2"
@@ -169,7 +177,10 @@ const SkillsTab = ({ skills, updateCharacter }: SkillsTabProps) => {
           </div>
         ) : (
           skills.map((skill: any) => (
-            <div key={skill.id} className="bg-gray-800/30 border border-cyan-500/20 rounded-lg p-4">
+            <div
+              key={skill.id}
+              className="bg-gray-800/30 border border-cyan-500/20 rounded-lg p-4"
+            >
               <div className="flex items-start gap-4">
                 <div className="flex-1 grid grid-cols-1 md:grid-cols-6 gap-3">
                   <div className="md:col-span-2">
@@ -177,7 +188,9 @@ const SkillsTab = ({ skills, updateCharacter }: SkillsTabProps) => {
                     <input
                       type="text"
                       value={skill.name}
-                      onChange={(e) => handleUpdateSkill(skill.id, 'name', e.target.value)}
+                      onChange={(e) =>
+                        handleUpdateSkill(skill.id, "name", e.target.value)
+                      }
                       className="w-full px-2 py-1 bg-gray-800/50 border border-cyan-500/30 rounded text-gray-100 focus:outline-none focus:border-cyan-500/50"
                     />
                   </div>
@@ -186,7 +199,9 @@ const SkillsTab = ({ skills, updateCharacter }: SkillsTabProps) => {
                     <input
                       type="text"
                       value={skill.formula}
-                      onChange={(e) => handleUpdateSkill(skill.id, 'formula', e.target.value)}
+                      onChange={(e) =>
+                        handleUpdateSkill(skill.id, "formula", e.target.value)
+                      }
                       className="w-full px-2 py-1 bg-gray-800/50 border border-cyan-500/30 rounded text-gray-100 focus:outline-none focus:border-cyan-500/50"
                       placeholder="e.g., INT+DEX"
                     />
@@ -194,12 +209,33 @@ const SkillsTab = ({ skills, updateCharacter }: SkillsTabProps) => {
                   <div>
                     <label className="text-xs text-gray-400">Value %</label>
                     <input
-                      type="number"
-                      value={skill.value}
-                      onChange={(e) => handleUpdateSkill(skill.id, 'value', parseInt(e.target.value) || 0)}
+                      type="text"
+                      value={
+                        skill.value === 0 || skill.value === ""
+                          ? ""
+                          : skill.value
+                      }
+                      onChange={(e) => {
+                        const inputValue = e.target.value;
+                        // Allow empty string or parse as number
+                        if (inputValue === "") {
+                          handleUpdateSkill(skill.id, "value", "");
+                        } else if (/^\d+$/.test(inputValue)) {
+                          handleUpdateSkill(
+                            skill.id,
+                            "value",
+                            parseInt(inputValue)
+                          );
+                        }
+                      }}
+                      onBlur={(e) => {
+                        // Convert empty string to 0 on blur
+                        if (e.target.value === "" || skill.value === "") {
+                          handleUpdateSkill(skill.id, "value", 0);
+                        }
+                      }}
                       className="w-full px-2 py-1 bg-gray-800/50 border border-cyan-500/30 rounded text-gray-100 focus:outline-none focus:border-cyan-500/50"
-                      min="0"
-                      max="200"
+                      placeholder="0"
                     />
                   </div>
                   <div className="md:col-span-2">
@@ -207,7 +243,9 @@ const SkillsTab = ({ skills, updateCharacter }: SkillsTabProps) => {
                     <input
                       type="text"
                       value={skill.note || ""}
-                      onChange={(e) => handleUpdateSkill(skill.id, 'note', e.target.value)}
+                      onChange={(e) =>
+                        handleUpdateSkill(skill.id, "note", e.target.value)
+                      }
                       className="w-full px-2 py-1 bg-gray-800/50 border border-cyan-500/30 rounded text-gray-100 focus:outline-none focus:border-cyan-500/50"
                       placeholder="Optional notes..."
                     />
@@ -215,11 +253,13 @@ const SkillsTab = ({ skills, updateCharacter }: SkillsTabProps) => {
                 </div>
                 <div className="flex items-center gap-2 pt-5">
                   <button
-                    onClick={() => handleUpdateSkill(skill.id, 'fumbled', !skill.fumbled)}
+                    onClick={() =>
+                      handleUpdateSkill(skill.id, "fumbled", !skill.fumbled)
+                    }
                     className={`p-2 rounded-lg transition-colors ${
                       skill.fumbled
-                        ? 'bg-amber-600/20 border border-amber-500/50 text-amber-300'
-                        : 'bg-gray-800/30 border border-gray-600/30 text-gray-500'
+                        ? "bg-amber-600/20 border border-amber-500/50 text-amber-300"
+                        : "bg-gray-800/30 border border-gray-600/30 text-gray-500"
                     }`}
                     title="Fumbled this session"
                   >

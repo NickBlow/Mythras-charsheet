@@ -230,74 +230,74 @@ const InfoTab = ({
             placeholder="Character background, personality, goals..."
           />
         </div>
-      </div>
 
-      {/* Passions Section */}
-      <div className="lg:col-span-3 mt-6">
-        <h3 className="text-lg font-semibold text-cyan-300 mb-3">Passions</h3>
-        <div className="space-y-2">
-          {/* Special Affinity to the Light */}
-          <div className="flex gap-2 items-center">
-            <span className="text-sm font-medium text-yellow-400 w-48">
-              Affinity to the Light
-            </span>
-            <input
-              type="number"
-              value={character.info.affinityToLight || 0}
-              onChange={(e) =>
-                updateInfo({ affinityToLight: parseInt(e.target.value) || 0 })
-              }
-              className="w-20 px-2 py-1 bg-gray-800/50 border border-yellow-500/30 rounded-lg text-gray-100 text-center focus:outline-none focus:border-yellow-500/50"
-              min="0"
-              max="100"
-            />
-            <span className="text-xs text-gray-400">%</span>
+        {/* Passions Section */}
+        <div className="mt-4">
+          <h3 className="text-lg font-semibold text-cyan-300 mb-3">Passions</h3>
+          <div className="space-y-2">
+            {/* Special Affinity to the Light */}
+            <div className="flex gap-2 items-center">
+              <span className="text-sm font-medium text-yellow-400 w-48">
+                Affinity to the Light
+              </span>
+              <input
+                type="number"
+                value={character.info.affinityToLight || 0}
+                onChange={(e) =>
+                  updateInfo({ affinityToLight: parseInt(e.target.value) || 0 })
+                }
+                className="w-20 px-2 py-1 bg-gray-800/50 border border-yellow-500/30 rounded-lg text-gray-100 text-center focus:outline-none focus:border-yellow-500/50"
+                min="0"
+                max="100"
+              />
+              <span className="text-xs text-gray-400">%</span>
+            </div>
+
+            {/* Regular Passions */}
+            {(character.info.passions || []).map(
+              (passion: any, index: number) => (
+                <div key={index} className="flex gap-2 items-center">
+                  <input
+                    type="text"
+                    value={passion.name}
+                    onChange={(e) =>
+                      handlePassionChange(index, "name", e.target.value)
+                    }
+                    className="flex-1 max-w-xs px-3 py-1 bg-gray-800/50 border border-cyan-500/30 rounded-lg text-gray-100 focus:outline-none focus:border-cyan-500/50"
+                    placeholder="Loyalty to the Republic, Hate Empire, etc..."
+                  />
+                  <input
+                    type="number"
+                    value={passion.value}
+                    onChange={(e) =>
+                      handlePassionChange(
+                        index,
+                        "value",
+                        parseInt(e.target.value) || 0
+                      )
+                    }
+                    className="w-20 px-2 py-1 bg-gray-800/50 border border-cyan-500/30 rounded-lg text-gray-100 text-center focus:outline-none focus:border-cyan-500/50"
+                    min="0"
+                    max="100"
+                  />
+                  <span className="text-xs text-gray-400">%</span>
+                  <button
+                    onClick={() => handlePassionRemove(index)}
+                    className="p-1 bg-red-600/20 border border-red-500/50 rounded hover:bg-red-600/30 transition-colors"
+                  >
+                    <X className="w-4 h-4" />
+                  </button>
+                </div>
+              )
+            )}
+            <button
+              onClick={handlePassionAdd}
+              className="px-4 py-2 bg-cyan-600/20 border border-cyan-500/50 rounded-lg hover:bg-cyan-600/30 transition-colors flex items-center gap-2"
+            >
+              <Plus className="w-4 h-4" />
+              Add Passion
+            </button>
           </div>
-
-          {/* Regular Passions */}
-          {(character.info.passions || []).map(
-            (passion: any, index: number) => (
-              <div key={index} className="flex gap-2 items-center">
-                <input
-                  type="text"
-                  value={passion.name}
-                  onChange={(e) =>
-                    handlePassionChange(index, "name", e.target.value)
-                  }
-                  className="flex-1 max-w-xs px-3 py-1 bg-gray-800/50 border border-cyan-500/30 rounded-lg text-gray-100 focus:outline-none focus:border-cyan-500/50"
-                  placeholder="Loyalty to the Republic, Hate Empire, etc..."
-                />
-                <input
-                  type="number"
-                  value={passion.value}
-                  onChange={(e) =>
-                    handlePassionChange(
-                      index,
-                      "value",
-                      parseInt(e.target.value) || 0
-                    )
-                  }
-                  className="w-20 px-2 py-1 bg-gray-800/50 border border-cyan-500/30 rounded-lg text-gray-100 text-center focus:outline-none focus:border-cyan-500/50"
-                  min="0"
-                  max="100"
-                />
-                <span className="text-xs text-gray-400">%</span>
-                <button
-                  onClick={() => handlePassionRemove(index)}
-                  className="p-1 bg-red-600/20 border border-red-500/50 rounded hover:bg-red-600/30 transition-colors"
-                >
-                  <X className="w-4 h-4" />
-                </button>
-              </div>
-            )
-          )}
-          <button
-            onClick={handlePassionAdd}
-            className="px-4 py-2 bg-cyan-600/20 border border-cyan-500/50 rounded-lg hover:bg-cyan-600/30 transition-colors flex items-center gap-2"
-          >
-            <Plus className="w-4 h-4" />
-            Add Passion
-          </button>
         </div>
       </div>
     </div>

@@ -18,12 +18,6 @@ export class SheetStore extends DurableObject {
         data JSON
       );
       CREATE INDEX IF NOT EXISTS idx_created_at ON versions(created_at);
-      
-      CREATE TABLE IF NOT EXISTS images (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        image_data TEXT,
-        updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-      );
     `);
     this.isInited = true;
     return { success: true };
@@ -61,28 +55,8 @@ export class SheetStore extends DurableObject {
     return { success: true };
   }
 
-  saveImage(imageData: string) {
-    this.init();
-    // Delete existing image and insert new one
-    this.ctx.storage.sql.exec("DELETE FROM images");
-    this.ctx.storage.sql.exec("INSERT INTO images (image_data) VALUES (?)", [
-      imageData,
-    ]);
-    return { success: true };
-  }
-
-  getImage(): string | null {
-    this.init();
-    const results = this.ctx.storage.sql
-      .exec("SELECT image_data FROM images LIMIT 1")
-      .toArray();
-
-    if (!results || results.length === 0) {
-      return null;
-    }
-
-    return (results[0].image_data as string) || null;
-  }
+  // Note: Image storage has been moved to R2 for better performance
+  // Images are now stored directly in R2 with the character ID as the key
 
   listVersions() {
     this.init();

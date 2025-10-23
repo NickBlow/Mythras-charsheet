@@ -4,6 +4,9 @@
   "compatibility_date": "2025-02-24",
   "main": "./workers/app.ts",
   "assets": {},
+  "observability": {
+    "enabled": true
+  },
   "vars": {
     "VALUE_FROM_CLOUDFLARE": "Hello from Cloudflare"
   },
@@ -25,6 +28,12 @@
     {
       "tag": "v1",
       "new_sqlite_classes": ["SheetStore"]
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "CHARACTER_IMAGES",
+      "bucket_name": "mythras-character-images"
     }
   ]
 }
