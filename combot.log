@@ -1,0 +1,16 @@
+$ eval "$(aws ssm get-parameter --name combot-secrets --with-decryption --query 'Parameter.Value' --output text | sed 's/^/export /')" && bun run --watch combot/combot.ts
+Server running on port 3001
+Server running on port 3001
+Server running on port 3001
+Server running on port 3001
+Server running on port 3001
+error: script "combot:dev" was terminated by signal SIGTERM (Polite quit request)
+$ eval "$(aws ssm get-parameter --name combot-secrets --with-decryption --query 'Parameter.Value' --output text | sed 's/^/export /')" && bun run --watch combot/combot.ts
+Server running on port 3001
+Server running on port 3001
+Server running on port 3001
+Server running on port 3001
+Server running on port 3001
+Server running on port 3001
+Server running on port 3001
+error: script "combot:dev" was terminated by signal SIGTERM (Polite quit request)

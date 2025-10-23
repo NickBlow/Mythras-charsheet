@@ -1,0 +1,95 @@
+{
+  "kind": "AWS::DynamoDB::Table",
+  "id": "combot-table",
+  "fqn": "combot/nickblow/combot-table",
+  "seq": 0,
+  "data": {},
+  "status": "created",
+  "output": {
+    "Symbol(alchemy::ResourceKind)": "AWS::DynamoDB::Table",
+    "Symbol(alchemy::ResourceID)": "combot-table",
+    "Symbol(alchemy::ResourceFQN)": "combot/nickblow/combot-table",
+    "Symbol(alchemy::ResourceScope)": {
+      "@scope": null
+    },
+    "Symbol(alchemy::ResourceSeq)": 0,
+    "typeName": "AWS::DynamoDB::Table",
+    "desiredState": {
+      "TableName": "combot",
+      "KeySchema": [
+        {
+          "AttributeName": "id",
+          "KeyType": "HASH"
+        }
+      ],
+      "AttributeDefinitions": [
+        {
+          "AttributeName": "id",
+          "AttributeType": "S"
+        }
+      ],
+      "ProvisionedThroughput": {
+        "ReadCapacityUnits": 25,
+        "WriteCapacityUnits": 25
+      }
+    },
+    "id": "combot",
+    "createdAt": 1761171855098,
+    "SSESpecification": {
+      "SSEEnabled": false
+    },
+    "ContributorInsightsSpecification": {
+      "Enabled": false
+    },
+    "PointInTimeRecoverySpecification": {
+      "PointInTimeRecoveryEnabled": false
+    },
+    "ProvisionedThroughput": {
+      "WriteCapacityUnits": 25,
+      "ReadCapacityUnits": 25
+    },
+    "WarmThroughput": {
+      "ReadUnitsPerSecond": 25,
+      "WriteUnitsPerSecond": 25
+    },
+    "TableName": "combot",
+    "AttributeDefinitions": [
+      {
+        "AttributeType": "S",
+        "AttributeName": "id"
+      }
+    ],
+    "BillingMode": "PROVISIONED",
+    "KeySchema": [
+      {
+        "KeyType": "HASH",
+        "AttributeName": "id"
+      }
+    ],
+    "Arn": "arn:aws:dynamodb:eu-west-1:165439465573:table/combot",
+    "DeletionProtectionEnabled": false,
+    "Tags": [],
+    "TimeToLiveSpecification": {
+      "Enabled": false
+    }
+  },
+  "props": {
+    "TableName": "combot",
+    "KeySchema": [
+      {
+        "AttributeName": "id",
+        "KeyType": "HASH"
+      }
+    ],
+    "AttributeDefinitions": [
+      {
+        "AttributeName": "id",
+        "AttributeType": "S"
+      }
+    ],
+    "ProvisionedThroughput": {
+      "ReadCapacityUnits": 25,
+      "WriteCapacityUnits": 25
+    }
+  }
+}
