@@ -287,30 +287,30 @@ const MythrasCharacterSheet = ({
       <header className="bg-gray-900 border-b border-cyan-500/30 sticky top-0 z-10">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <h1 className="text-2xl font-bold font-['Orbitron'] glow-cyan">
+            <h1 className="text-2xl font-bold font-['Orbitron'] glow-cyan truncate max-w-[60vw] sm:max-w-none">
               {character.info.name || "New Operative"}
             </h1>
-            <div className="flex gap-2">
+            <div className="flex gap-2 flex-wrap sm:flex-nowrap justify-end">
               <button
                 onClick={() => setShowVersionHistory(true)}
                 className="px-4 py-2 bg-purple-600/20 border border-purple-500/50 rounded-lg hover:bg-purple-600/30 transition-colors flex items-center gap-2"
               >
                 <History className="w-4 h-4" />
-                History
+                <span className="hidden sm:inline">History</span>
               </button>
               <button
                 onClick={saveCharacter}
                 className="px-4 py-2 bg-blue-600/20 border border-blue-500/50 rounded-lg hover:bg-blue-600/30 transition-colors flex items-center gap-2"
               >
                 <Save className="w-4 h-4" />
-                Save
+                <span className="hidden sm:inline">Save</span>
               </button>
               <button
                 onClick={shareCharacterLink}
                 className="px-4 py-2 bg-green-600/20 border border-green-500/50 rounded-lg hover:bg-green-600/30 transition-colors flex items-center gap-2"
               >
                 <Share2 className="w-4 h-4" />
-                Share
+                <span className="hidden sm:inline">Share</span>
               </button>
             </div>
           </div>

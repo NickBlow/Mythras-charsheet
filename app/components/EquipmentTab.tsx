@@ -143,40 +143,42 @@ const EquipmentTab = ({ equipment, updateCharacter }: EquipmentTabProps) => {
       </div>
 
       {/* Section Tabs */}
-      <div className="flex gap-2 border-b border-cyan-500/20">
-        <button
-          onClick={() => setActiveSection("weapons")}
-          className={`px-4 py-2 flex items-center gap-2 transition-colors ${
-            activeSection === "weapons"
-              ? "border-b-2 border-cyan-500 text-cyan-300"
-              : "text-gray-400 hover:text-gray-200"
-          }`}
-        >
-          <Swords className="w-4 h-4" />
-          Weapons
-        </button>
-        <button
-          onClick={() => setActiveSection("armor")}
-          className={`px-4 py-2 flex items-center gap-2 transition-colors ${
-            activeSection === "armor"
-              ? "border-b-2 border-cyan-500 text-cyan-300"
-              : "text-gray-400 hover:text-gray-200"
-          }`}
-        >
-          <Shield className="w-4 h-4" />
-          Armor
-        </button>
-        <button
-          onClick={() => setActiveSection("misc")}
-          className={`px-4 py-2 flex items-center gap-2 transition-colors ${
-            activeSection === "misc"
-              ? "border-b-2 border-cyan-500 text-cyan-300"
-              : "text-gray-400 hover:text-gray-200"
-          }`}
-        >
-          <Package className="w-4 h-4" />
-          Misc
-        </button>
+      <div className="border-b border-cyan-500/20 overflow-x-auto">
+        <div className="flex gap-2 whitespace-nowrap">
+          <button
+            onClick={() => setActiveSection("weapons")}
+            className={`px-4 py-2 flex items-center gap-2 transition-colors ${
+              activeSection === "weapons"
+                ? "border-b-2 border-cyan-500 text-cyan-300"
+                : "text-gray-400 hover:text-gray-200"
+            }`}
+          >
+            <Swords className="w-4 h-4" />
+            Weapons
+          </button>
+          <button
+            onClick={() => setActiveSection("armor")}
+            className={`px-4 py-2 flex items-center gap-2 transition-colors ${
+              activeSection === "armor"
+                ? "border-b-2 border-cyan-500 text-cyan-300"
+                : "text-gray-400 hover:text-gray-200"
+            }`}
+          >
+            <Shield className="w-4 h-4" />
+            Armor
+          </button>
+          <button
+            onClick={() => setActiveSection("misc")}
+            className={`px-4 py-2 flex items-center gap-2 transition-colors ${
+              activeSection === "misc"
+                ? "border-b-2 border-cyan-500 text-cyan-300"
+                : "text-gray-400 hover:text-gray-200"
+            }`}
+          >
+            <Package className="w-4 h-4" />
+            Misc
+          </button>
+        </div>
       </div>
 
       {/* Weapons Section */}
@@ -194,7 +196,7 @@ const EquipmentTab = ({ equipment, updateCharacter }: EquipmentTabProps) => {
 
           {/* Example from image: Blaster Pistol */}
           <div className="overflow-x-auto">
-            <table className="w-full">
+            <table className="w-full min-w-[900px]">
               <thead>
                 <tr className="text-left text-sm text-cyan-300 border-b border-cyan-500/20">
                   <th className="pb-2">Weapon</th>
