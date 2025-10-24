@@ -63,6 +63,9 @@ const SkillsTab = ({ skills, updateCharacter, stats }: SkillsTabProps) => {
   const [selectedProfSkill, setSelectedProfSkill] = useState("");
   const addInputRef = useRef<HTMLInputElement | null>(null);
   const [expanded, setExpanded] = useState<Record<number, boolean>>({});
+  const [desktopNotesOpen, setDesktopNotesOpen] = useState<
+    Record<number, boolean>
+  >({});
 
   const computeBaseValue = (formula?: string) => {
     if (!formula || !stats) return 0;
@@ -360,7 +363,7 @@ const SkillsTab = ({ skills, updateCharacter, stats }: SkillsTabProps) => {
                     key={skill.id}
                     className="border-b border-gray-800 align-top"
                   >
-                    <td className="py-2">
+                    <td className="py-2 pl-2">
                       <div className="flex items-center gap-2">
                         <input
                           type="text"
@@ -413,37 +416,75 @@ const SkillsTab = ({ skills, updateCharacter, stats }: SkillsTabProps) => {
                         placeholder="0"
                       />
                     </td>
-                    <td className="py-2">
-                      <textarea
-                        rows={1}
-                        value={skill.note || ""}
-                        onChange={(e) =>
-                          handleUpdateSkill(skill.id, "note", e.target.value)
-                        }
-                        onInput={(e) => {
-                          const el = e.currentTarget;
-                          const minHeight = 30; // match input height
-                          el.style.height = "auto";
-                          const newHeight = Math.max(
-                            el.scrollHeight,
-                            minHeight
-                          );
-                          el.style.height = `${newHeight}px`;
-                        }}
-                        ref={(el) => {
-                          if (el) {
-                            const minHeight = 30;
-                            el.style.height = "auto";
-                            const newHeight = Math.max(
-                              el.scrollHeight,
-                              minHeight
-                            );
-                            el.style.height = `${newHeight}px`;
-                          }
-                        }}
-                        className="w-full px-2 py-1 min-h-[30px] bg-gray-800/50 border border-cyan-500/30 rounded text-gray-100 focus:outline-none focus:border-cyan-500/50 resize-none overflow-hidden"
-                        placeholder="Optional notes..."
-                      />
+                    <td className="py-2 pl-3">
+                      {desktopNotesOpen[skill.id] ? (
+                        <div className="flex items-start gap-2 pl-2">
+                          <textarea
+                            rows={1}
+                            value={skill.note || ""}
+                            onChange={(e) =>
+                              handleUpdateSkill(
+                                skill.id,
+                                "note",
+                                e.target.value
+                              )
+                            }
+                            onInput={(e) => {
+                              const el = e.currentTarget;
+                              const minHeight = 30; // match input height
+                              el.style.height = "auto";
+                              const newHeight = Math.max(
+                                el.scrollHeight,
+                                minHeight
+                              );
+                              el.style.height = `${newHeight}px`;
+                            }}
+                            ref={(el) => {
+                              if (el) {
+                                const minHeight = 30;
+                                el.style.height = "auto";
+                                const newHeight = Math.max(
+                                  el.scrollHeight,
+                                  minHeight
+                                );
+                                el.style.height = `${newHeight}px`;
+                              }
+                            }}
+                            className="w-full px-2 py-1 min-h-[30px] bg-gray-800/50 border border-cyan-500/30 rounded text-gray-100 focus:outline-none focus:border-cyan-500/50 resize-none overflow-hidden"
+                            placeholder="Optional notes..."
+                          />
+                          <button
+                            onClick={() =>
+                              setDesktopNotesOpen((prev) => ({
+                                ...prev,
+                                [skill.id]: false,
+                              }))
+                            }
+                            className="px-2 py-1 bg-gray-800/30 border border-cyan-500/30 rounded hover:bg-gray-800/50 text-xs"
+                          >
+                            Done
+                          </button>
+                        </div>
+                      ) : (
+                        <div className="flex items-center justify-between gap-2 pl-2">
+                          <div className="text-xs text-gray-400 truncate max-w-[260px]">
+                            {skill.note && skill.note.trim() !== ""
+                              ? skill.note
+                              : "—"}
+                          </div>
+                          <button
+                            onClick={() =>
+                              setDesktopNotesOpen((prev) => ({
+                                ...prev,
+                                [skill.id]: true,
+                              }))
+                            }
+                            className="px-2 py-1 bg-gray-800/30 border border-cyan-500/30 rounded hover:bg-gray-800/50 text-xs"
+                          >
+                            Edit
+                          </button>
+                        </div>
+                      )}
                     </td>
                     <td className="py-2 w-20 align-middle">
                       <div className="flex items-center justify-center">
