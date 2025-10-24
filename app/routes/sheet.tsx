@@ -6,7 +6,7 @@ export function meta({ matches }: Route.MetaArgs) {
   const route = matches.find((x) => x?.id === "routes/sheet");
   const data: any = route?.data;
   const name = data?.characterData?.info?.name;
-  if (!charData || !name) {
+  if (!data || !name) {
     return [
       { title: "New Character" },
       { name: "description", content: "New Mythras Star Wars character!" },
