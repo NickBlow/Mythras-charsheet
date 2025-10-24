@@ -363,6 +363,7 @@ const MythrasCharacterSheet = ({
           {activeTab === "skills" && (
             <SkillsTab
               skills={character.skills}
+              stats={character.stats}
               updateCharacter={updateCharacter}
             />
           )}
