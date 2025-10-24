@@ -3,9 +3,9 @@ import MythrasCharacterSheet from "~/components/Sheet";
 import { useParams } from "react-router";
 
 export function meta({ matches }: Route.MetaArgs) {
-  const charData = matches.filter((x) => x?.id == "routes/sheet")[0];
-  // @ts-ignore
-  const name = charData?.data?.info?.name;
+  const route = matches.find((x) => x?.id === "routes/sheet");
+  const data: any = route?.data;
+  const name = data?.characterData?.info?.name;
   if (!charData || !name) {
     return [
       { title: "New Character" },

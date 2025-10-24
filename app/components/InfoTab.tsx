@@ -71,7 +71,7 @@ const InfoTab = ({
                 <img
                   src={characterImage}
                   alt="Character"
-                  className="w-full h-64 object-cover rounded-lg border border-cyan-500/30"
+                  className="w-full h-64 object-contain rounded-lg border border-cyan-500/30"
                 />
                 {isImageUploading ? (
                   <div className="absolute inset-0 flex items-center justify-center bg-gray-900/80 rounded-lg">
