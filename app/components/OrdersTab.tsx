@@ -44,7 +44,7 @@ const OrdersTab = ({ orders, updateCharacter }: OrdersTabProps) => {
 
   return (
     <div className="space-y-6">
-      <div className="flex items-center justify-between">
+      <div className="flex flex-wrap items-center justify-between gap-2">
         <h3 className="text-xl font-bold text-cyan-300 glow-cyan flex items-center gap-2">
           <Star className="w-5 h-5" />
           Orders & Organizations
@@ -132,24 +132,32 @@ const OrdersTab = ({ orders, updateCharacter }: OrdersTabProps) => {
         ) : (
           orders.map((order: any) => (
             <div key={order.id} className="hologram rounded-lg p-4">
-              <div className="flex items-start justify-between">
-                <div className="flex-1">
-                  <div className="flex items-center gap-3 mb-2">
+              <div className="flex flex-wrap items-start justify-between gap-2">
+                <div className="flex-1 min-w-0">
+                  <div className="flex flex-wrap items-center gap-3 gap-y-2 mb-2">
                     <input
                       type="text"
                       value={order.name}
-                      onChange={(e) => handleUpdateOrder(order.id, 'name', e.target.value)}
-                      className="text-lg font-semibold bg-transparent border-b border-cyan-500/30 text-cyan-300 focus:outline-none focus:border-cyan-500"
+                      onChange={(e) =>
+                        handleUpdateOrder(order.id, "name", e.target.value)
+                      }
+                      className="w-full md:w-auto flex-1 min-w-0 text-lg font-semibold bg-transparent border-b border-cyan-500/30 text-cyan-300 focus:outline-none focus:border-cyan-500"
                       placeholder="Organization name..."
                     />
-                    <div className="flex items-center gap-1">
+                    <div className="flex items-center gap-1 shrink-0">
                       {order.rank && (
                         <>
                           <ChevronUp className="w-4 h-4 text-green-400" />
                           <input
                             type="text"
                             value={order.rank}
-                            onChange={(e) => handleUpdateOrder(order.id, 'rank', e.target.value)}
+                            onChange={(e) =>
+                              handleUpdateOrder(
+                                order.id,
+                                "rank",
+                                e.target.value
+                              )
+                            }
                             className="px-2 py-1 bg-gray-800/50 border border-cyan-500/30 rounded text-sm text-gray-300 focus:outline-none focus:border-cyan-500/50"
                             placeholder="Rank"
                           />
@@ -159,7 +167,9 @@ const OrdersTab = ({ orders, updateCharacter }: OrdersTabProps) => {
                   </div>
                   <textarea
                     value={order.notes || ""}
-                    onChange={(e) => handleUpdateOrder(order.id, 'notes', e.target.value)}
+                    onChange={(e) =>
+                      handleUpdateOrder(order.id, "notes", e.target.value)
+                    }
                     className="w-full px-2 py-1 bg-gray-800/30 border border-cyan-500/20 rounded text-sm text-gray-300 focus:outline-none focus:border-cyan-500/50"
                     placeholder="Notes about this affiliation..."
                     rows={2}
@@ -170,7 +180,7 @@ const OrdersTab = ({ orders, updateCharacter }: OrdersTabProps) => {
                 </div>
                 <button
                   onClick={() => handleRemoveOrder(order.id)}
-                  className="ml-4 p-2 bg-red-600/20 border border-red-500/50 rounded-lg hover:bg-red-600/30 transition-colors"
+                  className="self-start shrink-0 ml-0 md:ml-4 p-2 bg-red-600/20 border border-red-500/50 rounded-lg hover:bg-red-600/30 transition-colors"
                 >
                   <X className="w-4 h-4" />
                 </button>
@@ -182,7 +192,9 @@ const OrdersTab = ({ orders, updateCharacter }: OrdersTabProps) => {
 
       {/* Faction Reference */}
       <div className="mt-8">
-        <h4 className="text-lg font-semibold text-cyan-300 mb-3">Common Factions</h4>
+        <h4 className="text-lg font-semibold text-cyan-300 mb-3">
+          Common Factions
+        </h4>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
           {[
             "Jedi Order",
@@ -198,7 +210,10 @@ const OrdersTab = ({ orders, updateCharacter }: OrdersTabProps) => {
             "Mandalorians",
             "Trade Federation",
           ].map((faction) => (
-            <div key={faction} className="bg-gray-800/30 border border-cyan-500/20 rounded px-3 py-2 text-sm text-gray-300">
+            <div
+              key={faction}
+              className="bg-gray-800/30 border border-cyan-500/20 rounded px-3 py-2 text-sm text-gray-300"
+            >
               {faction}
             </div>
           ))}

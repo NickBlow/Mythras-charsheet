@@ -127,23 +127,37 @@ const MythrasCharacterSheet = ({
     return data;
   });
 
-  // Version management
+  // Version management – apply server data only when it differs from the last
+  // confirmed snapshot (prevents clobbering in‑progress edits during revalidation)
   useEffect(() => {
-    if (charData && previousCharacterRef.current) {
-      const prevData = JSON.parse(previousCharacterRef.current);
-      if (JSON.stringify(prevData) !== JSON.stringify(charData)) {
-        setCharacter(charData);
-        lastSavedCharacterRef.current = JSON.stringify(charData);
-      }
-    } else if (charData) {
+    if (!charData) return;
+
+    const newDataString = JSON.stringify(charData);
+    const lastSavedSnapshot = previousCharacterRef.current;
+
+    // First load: initialize state and snapshot
+    if (!lastSavedSnapshot) {
       setCharacter(charData);
-      lastSavedCharacterRef.current = JSON.stringify(charData);
-    } else {
-      // Initialize lastSavedCharacterRef for new characters with no data
-      lastSavedCharacterRef.current = JSON.stringify(character);
+      previousCharacterRef.current = newDataString;
+      lastSavedCharacterRef.current = newDataString;
+      return;
     }
-    previousCharacterRef.current = JSON.stringify(charData);
-  }, [charData]);
+
+    // Only replace local state when the incoming server data represents a
+    // different saved snapshot and we're not in the middle of submitting.
+    if (fetcher.state === "idle" && lastSavedSnapshot !== newDataString) {
+      setCharacter(charData);
+      previousCharacterRef.current = newDataString;
+      lastSavedCharacterRef.current = newDataString;
+    }
+  }, [charData, fetcher.state]);
+
+  // After a save round‑trip completes, record the server‑known snapshot
+  useEffect(() => {
+    if (fetcher.state === "idle" && charData) {
+      previousCharacterRef.current = JSON.stringify(charData);
+    }
+  }, [fetcher.state, charData]);
 
   // Monitor fetcher state for image upload completion
   useEffect(() => {

@@ -533,7 +533,7 @@ const EquipmentTab = ({ equipment, updateCharacter }: EquipmentTabProps) => {
             {(equipment.misc || []).map((item: any) => (
               <div
                 key={item.id}
-                className="bg-gray-800/30 border border-cyan-500/20 rounded-lg p-3 flex gap-3 items-center"
+                className="bg-gray-800/30 border border-cyan-500/20 rounded-lg p-3 flex flex-wrap gap-2 items-center"
               >
                 <input
                   type="text"
@@ -541,10 +541,10 @@ const EquipmentTab = ({ equipment, updateCharacter }: EquipmentTabProps) => {
                   onChange={(e) =>
                     handleUpdateMisc(item.id, "name", e.target.value)
                   }
-                  className="flex-1 px-2 py-1 bg-gray-800/50 border border-cyan-500/30 rounded text-gray-100 focus:outline-none focus:border-cyan-500/50"
+                  className="w-full sm:flex-1 min-w-0 px-2 py-1 bg-gray-800/50 border border-cyan-500/30 rounded text-gray-100 focus:outline-none focus:border-cyan-500/50"
                   placeholder="Item name"
                 />
-                <div className="flex items-center gap-1">
+                <div className="flex items-center gap-1 shrink-0">
                   <span className="text-xs text-gray-400">Qty:</span>
                   <input
                     type="number"
@@ -560,7 +560,7 @@ const EquipmentTab = ({ equipment, updateCharacter }: EquipmentTabProps) => {
                     min="1"
                   />
                 </div>
-                <div className="flex items-center gap-1">
+                <div className="flex items-center gap-1 shrink-0">
                   <span className="text-xs text-gray-400">ENC:</span>
                   <input
                     type="number"
@@ -582,12 +582,12 @@ const EquipmentTab = ({ equipment, updateCharacter }: EquipmentTabProps) => {
                   onChange={(e) =>
                     handleUpdateMisc(item.id, "notes", e.target.value)
                   }
-                  className="flex-1 max-w-xs px-2 py-1 bg-gray-800/50 border border-cyan-500/30 rounded text-gray-100 focus:outline-none focus:border-cyan-500/50"
+                  className="w-full sm:flex-1 sm:max-w-xs min-w-0 px-2 py-1 bg-gray-800/50 border border-cyan-500/30 rounded text-gray-100 focus:outline-none focus:border-cyan-500/50"
                   placeholder="Notes"
                 />
                 <button
                   onClick={() => handleRemoveMisc(item.id)}
-                  className="p-1 bg-red-600/20 border border-red-500/50 rounded hover:bg-red-600/30 transition-colors"
+                  className="p-1 bg-red-600/20 border border-red-500/50 rounded hover:bg-red-600/30 transition-colors shrink-0"
                 >
                   <X className="w-3 h-3" />
                 </button>
