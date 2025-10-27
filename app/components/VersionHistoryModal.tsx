@@ -1,6 +1,13 @@
-import { X, Clock, ChevronLeft, ChevronRight, Calendar } from "lucide-react";
+import {
+  X,
+  Clock,
+  ChevronLeft,
+  ChevronRight,
+  Calendar,
+  RotateCcw,
+} from "lucide-react";
 import { useState, useEffect } from "react";
-import { useFetcher, useLocation } from "react-router";
+import { useFetcher, useLocation, useRevalidator } from "react-router";
 
 interface VersionHistoryModalProps {
   onClose: () => void;
@@ -15,7 +22,9 @@ const VersionHistoryModal = ({
   const [selectedVersion, setSelectedVersion] = useState<any>(null);
   const [comparing, setComparing] = useState(false);
   const fetcher = useFetcher();
+  const restoreFetcher = useFetcher();
   const location = useLocation();
+  const revalidator = useRevalidator();
 
   useEffect(() => {
     // Load version history
@@ -37,6 +46,35 @@ const VersionHistoryModal = ({
       setComparing(true);
     }
   }, [fetcher.data]);
+
+  const reloadHistory = () => {
+    const formData = new FormData();
+    formData.append("action", "getHistory");
+    fetcher.submit(formData, { method: "post", action: location.pathname });
+  };
+
+  const restoreSelectedVersion = () => {
+    if (!selectedVersion) return;
+    const { version, created_at, lastSaved, currentVersion, ...rest } =
+      selectedVersion || {};
+    const payload = rest;
+
+    const formData = new FormData();
+    formData.append("action", "restore");
+    formData.append("data", JSON.stringify(payload));
+    restoreFetcher.submit(formData, {
+      method: "post",
+      action: location.pathname,
+    });
+  };
+
+  useEffect(() => {
+    if (restoreFetcher.state === "idle" && restoreFetcher.data?.success) {
+      // Revalidate route loader to pull latest data, then refresh history list
+      revalidator.revalidate();
+      reloadHistory();
+    }
+  }, [restoreFetcher.state, restoreFetcher.data, revalidator]);
 
   const loadVersion = (versionId: number) => {
     const formData = new FormData();
@@ -359,13 +397,30 @@ const VersionHistoryModal = ({
               </div>
             ) : (
               <div className="p-6">
-                <div className="mb-6">
-                  <h3 className="text-lg font-semibold text-cyan-300 mb-3">
-                    Comparing Version {selectedVersion?.version} with Current
-                  </h3>
-                  <div className="text-sm text-gray-400">
-                    {formatDate(selectedVersion?.created_at)} → Current
+                <div className="mb-6 flex items-start justify-between gap-3">
+                  <div>
+                    <h3 className="text-lg font-semibold text-cyan-300 mb-3">
+                      Comparing Version {selectedVersion?.version} with Current
+                    </h3>
+                    <div className="text-sm text-gray-400">
+                      {formatDate(selectedVersion?.created_at)} → Current
+                    </div>
                   </div>
+                  <button
+                    onClick={restoreSelectedVersion}
+                    disabled={
+                      !selectedVersion || restoreFetcher.state !== "idle"
+                    }
+                    className={`px-4 py-2 rounded-lg border transition-colors flex items-center gap-2 whitespace-nowrap ${
+                      restoreFetcher.state !== "idle"
+                        ? "bg-yellow-700/20 border-yellow-600/40 text-yellow-400/60 cursor-not-allowed"
+                        : "bg-yellow-600/20 border-yellow-500/50 text-yellow-300 hover:bg-yellow-600/30"
+                    }`}
+                    title="Restore this snapshot as a new version"
+                  >
+                    <RotateCcw className="w-4 h-4" />
+                    Restore snapshot
+                  </button>
                 </div>
 
                 {/* Character Summary Comparison */}

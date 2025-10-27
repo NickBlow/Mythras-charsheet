@@ -60,6 +60,25 @@ const MythrasCharacterSheet = ({
   );
   const [isImageUploading, setIsImageUploading] = useState(false);
 
+  // Revalidate loader data when the window regains focus or becomes visible
+  useEffect(() => {
+    const handleFocus = () => {
+      revalidator.revalidate();
+    };
+    const handleVisibilityChange = () => {
+      if (document.visibilityState === "visible") {
+        revalidator.revalidate();
+      }
+    };
+
+    window.addEventListener("focus", handleFocus);
+    document.addEventListener("visibilitychange", handleVisibilityChange);
+    return () => {
+      window.removeEventListener("focus", handleFocus);
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
+    };
+  }, [revalidator]);
+
   // Active tab logic (hash-based)
   const validTabs = [
     "info",
