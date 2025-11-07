@@ -58,9 +58,10 @@ Joining requires the discovery of latent Force sensitivity, sponsorship by a Jed
 **Duties:** Act as a peacekeeper; may take a Padawan.
 
 **Privileges:**
-Access to training for jedi skills at 50% discount
-Free lightsaber crafting materials
-Jedi Order members will house and shelter you for free on missions
+
+- Access to training for jedi skills at 50% discount
+- Free lightsaber crafting materials
+- Jedi Order members will house and shelter you for free on missions
 
 **Rewards:** Learn _Coerce, Deflect, Telepathy, Speed_ and one lightsaber form trait.
 
@@ -71,10 +72,11 @@ Jedi Order members will house and shelter you for free on missions
 **Duties:** Lead missions, teach.
 
 **Privileges:**
-Access to training for jedi skills at 70% discount
-Free lightsaber crafting materials
-Jedi Order and Alliance members will house and shelter you for free on missions
-Your own Jedi School
+
+- Access to training for jedi skills at 70% discount
+- Free lightsaber crafting materials
+- Jedi Order and Alliance members will house and shelter you for free on missions
+- Your own Jedi School
 
 **Rewards:** Learn _Healing, Hibernation, Illusion_ and one lightsaber form trait
 
@@ -85,10 +87,11 @@ Your own Jedi School
 **Duties:** Guide the Order, maintain the balance of the Force.
 
 **Privileges:**
-Access to training for jedi skills at 100% discount
-Free lightsaber crafting materials
-Jedi Order and Alliance members will house and shelter you for free on missions, as well as providing assistance where possible
-Your own Jedi Temple
+
+- Access to training for jedi skills at 100% discount
+- Free lightsaber crafting materials
+- Jedi Order and Alliance members will house and shelter you for free on missions, as well as providing assistance where possible
+- Your own Jedi Temple
 
 **Rewards:** Learn _Concealment, Deny, Projection_. May learn a Mastery trait for an existing form.
 
@@ -331,7 +334,7 @@ Pilot (Space), Mechanics, Deceit, Streetwise, Gambling, Commerce, Influence, Per
 
 #### Rookie – “Hidden Compartments”
 
-**Requirements:** One successful delivery run.
+**Requirements:** Two skills at 40%, one successful run.
 
 **Duties:** Run small cargoes, build contacts.
 
@@ -341,7 +344,7 @@ Pilot (Space), Mechanics, Deceit, Streetwise, Gambling, Commerce, Influence, Per
 
 #### Spacer – “Old Debts, New Favors”
 
-**Requirements:** Three skills at 50%
+**Requirements:** Three skills at 50%, two successful runs
 
 **Duties:** Manage smuggling runs, keep quiet.
 
@@ -352,9 +355,9 @@ Pilot (Space), Mechanics, Deceit, Streetwise, Gambling, Commerce, Influence, Per
 
 **Rewards:** +10% to any guild skill
 
-#### Runner – “Hidden Compartments”
+#### Runner – “This is where the fun begins”
 
-**Requirements:** Two skills at 70%, one successful run.
+**Requirements:** Two skills at 70%, three successful runs.
 
 **Duties:** Evade authorities, maintain ships.
 
@@ -365,11 +368,11 @@ Pilot (Space), Mechanics, Deceit, Streetwise, Gambling, Commerce, Influence, Per
 - Always know a local contact (may betray you).
 - Ship repairs are 10% cheaper
 
-**Rewards:**
+**Rewards:** One pilot skill increases to 100%
 
 #### Captain – “Never Tell me the odds”
 
-**Requirements:** 3 skills at 90%, three successful runs
+**Requirements:** 3 skills at 90%, one daring escape
 
 **Duties:** Lead crews, negotiate contracts.
 
@@ -383,7 +386,7 @@ Pilot (Space), Mechanics, Deceit, Streetwise, Gambling, Commerce, Influence, Per
 
 **Rewards:** Lucky - When rolling for any skill test, the character can choose which way to read the d100 result. For example, a roll of 90 could be read as 09. Note: if double digits, such as 00, 11, 22, and so forth, are rolled, the result cannot be reinterpreted.
 
-### Legend – “Encased in Carbonite”
+#### Legend – “Encased in Carbonite”
 
 **Requirements:** Legendary job, 3 skills at 110%.
 
@@ -420,16 +423,16 @@ Combat Style (Mandalorian), Endurance, Willpower, Leadership, Mechanics, Pilot (
 **Why Join:** Honor, loyalty, and superior craftsmanship.  
 **Joining Requirements:** Combat Style 50%, Endurance 50%, Willpower 50%.
 
-### Foundling – “This Is the Way”
+#### Foundling – “This Is the Way”
 
 **Requirements:** Clan sponsorship and acceptance.
 
 **Duties:** Train and serve elders
 
 **Privileges:**
-Access to a beskar armorer to craft armor with only materials cost.
+Access to a beskar armorer to craft leg armor with only materials cost.
 
-### Warrior – “Watch Those Wrist Rockets”
+#### Warrior – “Watch Those Wrist Rockets”
 
 **Requirements:** Combat Style 60%, Endurance 60%.
 
@@ -437,12 +440,12 @@ Access to a beskar armorer to craft armor with only materials cost.
 
 **Privileges:**
 
-- Access to a beskar armorer to craft armor with only materials cost.
+- Access to a beskar armorer to craft leg and arm armor with only materials cost.
 - You can find a mandalorian enclave on a planet with 30% success chance
 
 **Rewards:** 3 wrist rockets per adventure (refill each mission, as particle grenade).
 
-### Champion – “Weapons are my religion”
+#### Champion – “Weapons are part of my religion”
 
 **Requirements:** Combat Style 70%, Willpower 60%.
 
@@ -451,16 +454,13 @@ Access to a beskar armorer to craft armor with only materials cost.
 **Priviliges:**
 
 - You may carry weapons and armor even in places that are otherwise under heavy security
-
-- Access to a beskar armorer to craft armor with only materials cost.
-
+- Access to a beskar armorer to craft leg, arm and abdomen armor with only materials cost.
 - You can find a mandalorian enclave on a planet with 30% success chance
-
 - You can always find out where to get some beskar
 
 **Rewards:** Increase a combat style of your choice by 10%
 
-### Clan Leader – "Clan of Two"
+#### Clan Leader – "Clan of Two"
 
 **Requirements:** 3 skills 80%, 5 years clan service.
 
@@ -469,13 +469,13 @@ Access to a beskar armorer to craft armor with only materials cost.
 **Priviliges:**
 
 - You may carry weapons and armor even in places that are otherwise under heavy security
-- Access to a beskar armorer to craft armor with only materials cost.
+- Access to a beskar armorer to craft any beskar armor piece with only materials cost.
 - You can find a mandalorian enclave on a planet with 30% success chance
 - You can always find out where to get some beskar
 
 **Rewards:** May name one Foundling NPC who assists once per session.
 
-### Future Mand’alor – “It's a creed”
+#### Future Mand’alor – “It's a creed”
 
 **Requirements:** Combat Style 110%, Leadership 110%, chosen by clans.
 
@@ -489,7 +489,7 @@ Access to a beskar armorer to craft armor with only materials cost.
 - You can always find out where to get some beskar
 - You know where the darksaber is
 
-**Rewards:** A full set of beskar armor and can use the darksaber as part of your combat style.
+**Rewards:** Any missing pieces of beskar armor (including upgrading helmet to a masterwork mask with +1 armor) and can use the darksaber as part of your combat style.
 
 ## Czerka Corp
 
