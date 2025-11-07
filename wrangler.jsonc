@@ -3,6 +3,9 @@
   "name": "mythras-sw-sheet",
   "compatibility_date": "2025-02-24",
   "main": "./workers/app.ts",
+  "compatibility_flags": [
+    "nodejs_compat_v2"
+  ],
   "assets": {},
   "observability": {
     "enabled": true
