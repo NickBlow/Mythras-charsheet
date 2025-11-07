@@ -96,3 +96,28 @@ body {
   animation: stars 200s linear infinite;
   opacity: 0.3;
 }
+
+/* Collapsible sections */
+details.collapsible {
+  @apply bg-gray-900/30 border border-cyan-400/30 rounded-md shadow-[0_0_20px_rgba(6,182,212,0.08)];
+}
+
+details.collapsible > summary {
+  @apply flex items-center justify-between w-full text-left px-4 py-3 bg-gray-900/60 hover:bg-gray-900/80 text-cyan-200 font-semibold;
+}
+
+details.collapsible > summary {
+  @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500/40;
+}
+
+details.collapsible > summary::-webkit-details-marker {
+  display: none;
+}
+
+details.collapsible .chevron {
+  transition: transform 0.2s ease;
+}
+
+details.collapsible[open] .chevron {
+  transform: rotate(90deg);
+}
