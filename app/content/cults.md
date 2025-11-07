@@ -241,9 +241,10 @@ Combat Style (Ranged or Melee), Track, Stealth, Mechanics, Streetwise, Perceptio
 
 **Why Join:** Hunters gain profit, prestige, and support.
 
-**Joining Requirements:**  
-Track 40%, Combat Style 50%, Streetwise 40%.  
-One confirmed independent bounty capture.
+**Joining Requirements:**
+
+- Track 40%, Combat Style 50%, Streetwise 40%.
+- One confirmed independent bounty capture.
 
 #### Candidate – “Target Acquired”
 
@@ -272,8 +273,9 @@ One confirmed independent bounty capture.
 **Duties:** Mentor novices, complete mid-tier targets.
 
 **Privileges:**
-Access to the highest-value bounty postings and restricted information networks
-Use of advanced Guild resources (e.g., specialized equipment at reduced cost, advanced medical facilities)
+
+- Access to the highest-value bounty postings and restricted information networks
+- Use of advanced Guild resources (e.g., specialized equipment at reduced cost, advanced medical facilities)
 
 **Rewards:** Double payment for live captures.
 
@@ -284,9 +286,10 @@ Use of advanced Guild resources (e.g., specialized equipment at reduced cost, ad
 **Duties:** Lead hunts, represent the Guild.
 
 **Privileges:**
-Access to the highest-value bounty postings and restricted information networks
-Use of advanced Guild resources (e.g., specialized equipment at reduced cost, advanced medical facilities)
-Profit share of 5% of the Guild's rewards
+
+- Access to the highest-value bounty postings and restricted information networks
+- Use of advanced Guild resources (e.g., specialized equipment at reduced cost, advanced medical facilities)
+- Profit share of 5% of the Guild's rewards
 
 **Rewards:** Upgrade one combat style to 100%
 
@@ -297,10 +300,11 @@ Profit share of 5% of the Guild's rewards
 **Duties:** Lead hunts, represent the Guild.
 
 **Privileges:**
-Large share of guild profits
-Luxurious personal apartment
-Ability to command guild resources
-Access to all bounties and information the guild has to offer
+
+- Large share of guild profits
+- Luxurious personal apartment
+- Ability to command guild resources
+- Access to all bounties and information the guild has to offer
 
 **Rewards:** Raise a characteristic by 1d6 up to the species maximum.
 
@@ -342,8 +346,9 @@ Pilot (Space), Mechanics, Deceit, Streetwise, Gambling, Commerce, Influence, Per
 **Duties:** Manage smuggling runs, keep quiet.
 
 **Privileges:**
-Always know a local contact (may betray you).
-Access to reduced training costs (25%)
+
+- Always know a local contact (may betray you).
+- Access to reduced training costs (25%)
 
 **Rewards:** +10% to any guild skill
 
@@ -354,10 +359,11 @@ Access to reduced training costs (25%)
 **Duties:** Evade authorities, maintain ships.
 
 **Privileges:**
-The guild will help you hide from the law and sell stolen goods
-Reduced training costs (50%)
-Always know a local contact (may betray you).
-Ship repairs are 10% cheaper
+
+- The guild will help you hide from the law and sell stolen goods
+- Reduced training costs (50%)
+- Always know a local contact (may betray you).
+- Ship repairs are 10% cheaper
 
 **Rewards:**
 
@@ -368,11 +374,12 @@ Ship repairs are 10% cheaper
 **Duties:** Lead crews, negotiate contracts.
 
 **Privileges:**
-The guild will help you hide from the law and sell stolen goods
-Reduced training costs (50%)
-Always know a local contact (may betray you).
-Ship repairs are 20% cheaper
-One free ship modification (speed, stealth, or cargo).
+
+- The guild will help you hide from the law and sell stolen goods
+- Reduced training costs (50%)
+- Always know a local contact (may betray you).
+- Ship repairs are 20% cheaper
+- One free ship modification (speed, stealth, or cargo).
 
 **Rewards:** Lucky - When rolling for any skill test, the character can choose which way to read the d100 result. For example, a roll of 90 could be read as 09. Note: if double digits, such as 00, 11, 22, and so forth, are rolled, the result cannot be reinterpreted.
 
@@ -383,12 +390,13 @@ One free ship modification (speed, stealth, or cargo).
 **Duties:** Expand Alliance influence, mentor new captains.
 
 **Privileges:**
-The guild will help you hide from the law and sell stolen goods
-Reduced training costs (75%)
-Always know a local contact (may betray you).
-Ship repairs are 20% cheaper
-One additional free ship modification (speed, stealth, or cargo).
-If your ship is destroyed, gain a new one for free (though the previous owner may not be happy)
+
+- The guild will help you hide from the law and sell stolen goods
+- Reduced training costs (75%)
+- Always know a local contact (may betray you).
+- Ship repairs are 20% cheaper
+- One additional free ship modification (speed, stealth, or cargo).
+- If your ship is destroyed, gain a new one for free (though the previous owner may not be happy)
 
 **Rewards:** If your character is killed, you may instead state they are merely captured. They must be rescued from where they're being stored in carbonite. This ability may only be used once.
 
@@ -428,22 +436,27 @@ Access to a beskar armorer to craft armor with only materials cost.
 **Duties:** Fight for the clan; protect foundlings.
 
 **Privileges:**
-Access to a beskar armorer to craft armor with only materials cost.
-You can find a mandalorian enclave on a planet with 30% success chance
+
+- Access to a beskar armorer to craft armor with only materials cost.
+- You can find a mandalorian enclave on a planet with 30% success chance
 
 **Rewards:** 3 wrist rockets per adventure (refill each mission, as particle grenade).
 
-### Champion – “Weapons are part of my religion”
+### Champion – “Weapons are my religion”
 
 **Requirements:** Combat Style 70%, Willpower 60%.
 
 **Duties:** Lead hunts, enforce honor.
 
 **Priviliges:**
-You may carry weapons and armor even in places that are otherwise under heavy security
-Access to a beskar armorer to craft armor with only materials cost.
-You can find a mandalorian enclave on a planet with 30% success chance
-You can always find out where to get some beskar
+
+- You may carry weapons and armor even in places that are otherwise under heavy security
+
+- Access to a beskar armorer to craft armor with only materials cost.
+
+- You can find a mandalorian enclave on a planet with 30% success chance
+
+- You can always find out where to get some beskar
 
 **Rewards:** Increase a combat style of your choice by 10%
 
@@ -454,10 +467,11 @@ You can always find out where to get some beskar
 **Duties:** Protect your clan, uphold your laws.
 
 **Priviliges:**
-You may carry weapons and armor even in places that are otherwise under heavy security
-Access to a beskar armorer to craft armor with only materials cost.
-You can find a mandalorian enclave on a planet with 30% success chance
-You can always find out where to get some beskar
+
+- You may carry weapons and armor even in places that are otherwise under heavy security
+- Access to a beskar armorer to craft armor with only materials cost.
+- You can find a mandalorian enclave on a planet with 30% success chance
+- You can always find out where to get some beskar
 
 **Rewards:** May name one Foundling NPC who assists once per session.
 
@@ -468,11 +482,13 @@ You can always find out where to get some beskar
 **Duties:** Unite the clans. Solve disputes. Pave the way.
 
 **Priviliges:**
-You may carry weapons and armor even in places that are otherwise under heavy security
-Access to a beskar armorer to craft armor with only materials cost.
-You can find a mandalorian enclave on a planet with 30% success chance
-You can always find out where to get some beskar
-You know where the darksaber is
+
+- You may carry weapons and armor even in places that are otherwise under heavy security
+- Access to a beskar armorer to craft armor with only materials cost.
+- You can find a mandalorian enclave on a planet with 30% success chance
+- You can always find out where to get some beskar
+- You know where the darksaber is
+
 **Rewards:** A full set of beskar armor and can use the darksaber as part of your combat style.
 
 ## Czerka Corp
