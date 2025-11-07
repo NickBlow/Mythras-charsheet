@@ -267,7 +267,7 @@ Combat Style (Ranged or Melee), Track, Stealth, Mechanics, Streetwise, Perceptio
 
 **Priviliges:** Access to mid-tier bounties. Basic protection from the Guild in case of disputes
 
-**Rewards:** Once per session, reduce killing blow to incapacitating result.
+**Rewards:** Can use a luck point to reduce a killing blow to an incapacitating result.
 
 #### Master Hunter – “I can take you in warm...”
 
@@ -334,7 +334,7 @@ Pilot (Space), Mechanics, Deceit, Streetwise, Gambling, Commerce, Influence, Per
 
 #### Rookie – “Hidden Compartments”
 
-**Requirements:** Two skills at 40%, one successful run.
+**Requirements:** Two skills at 40%
 
 **Duties:** Run small cargoes, build contacts.
 
@@ -344,7 +344,7 @@ Pilot (Space), Mechanics, Deceit, Streetwise, Gambling, Commerce, Influence, Per
 
 #### Spacer – “Old Debts, New Favors”
 
-**Requirements:** Three skills at 50%, two successful runs
+**Requirements:** Three skills at 50%. Two successful delivery runs.
 
 **Duties:** Manage smuggling runs, keep quiet.
 
@@ -401,7 +401,7 @@ Pilot (Space), Mechanics, Deceit, Streetwise, Gambling, Commerce, Influence, Per
 - One additional free ship modification (speed, stealth, or cargo).
 - If your ship is destroyed, gain a new one for free (though the previous owner may not be happy)
 
-**Rewards:** If your character is killed, you may instead state they are merely captured. They must be rescued from where they're being stored in carbonite. This ability may only be used once.
+**Rewards:** If your character is killed, you may instead state they are merely captured. They must be rescued from where they're being stored in carbonite. This ability may only be used once, though you may recharge it at a cost of 10 experience rolls.
 
 ## Mandalorian Clans
 
@@ -473,7 +473,7 @@ Access to a beskar armorer to craft leg armor with only materials cost.
 - You can find a mandalorian enclave on a planet with 30% success chance
 - You can always find out where to get some beskar
 
-**Rewards:** May name one Foundling NPC who assists once per session.
+**Rewards:** May name one Foundling NPC who can assist you where possible for a luck point.
 
 #### Future Mand’alor – “It's a creed”
 
@@ -574,7 +574,7 @@ Requires business or technical skill and a recommendation from a Czerka represen
 
 **Privileges:** Free use of all Czerka assets within jurisdiction.
 
-**Rewards:** May reroll one failed social or business roll per session.
+**Rewards:** May use a luck roll to critically succeed a failed social or business roll.
 
 ## The Sith Empire
 
@@ -733,4 +733,108 @@ Science (Tactics), Willpower, Oratory
 
 **Privileges:** Diplomatic immunity, access to Alliance treasury and fleets.
 
-**Rewards:** The character can accomplish incredible feats or inspire others to through sheer force of will. A successful Willpower roll is needed for the desired effect. They might lead an army across frozen tundra in the dead of winter without any deserters, or overcome a failed Athletics roll to climb a summit. GM's discretion on the difficulty of the task. Only usable once per game session. Cost: one or more levels of Fatigue as decided by the GM.
+**Rewards:** The character can accomplish incredible feats or inspire others to through sheer force of will. A successful Willpower roll is needed for the desired effect. They might lead an army across frozen tundra in the dead of winter without any deserters, or overcome a failed Athletics roll to climb a summit. GM's discretion on the difficulty of the task. Cost: one or more levels of Fatigue as decided by the GM + one luck point. The luck point is refunded if the willpower roll fails.
+
+# The Hutt Cartel
+
+> "Credits talk. Everything else walks."
+
+The Hutt Cartel is the galaxy's oldest and most powerful criminal syndicate, controlling vast networks of smuggling, gambling, spice trade, and slavery. Built on profit, fear, and influence, the Cartel operates above the law through wealth and intimidation. From their palace strongholds, the Hutts pull strings across a thousand worlds.
+
+---
+
+## Skills
+
+Commerce, Deceit, Influence, Streetwise, Bureaucracy, Gambling, Customs (Criminal Underworld), Willpower, Perception, Insight
+
+---
+
+## Restrictions and Taboos
+
+- Never steal from the Cartel or its clients.
+- All debts must be paid — with interest.
+- Betrayal is rewarded with a bounty on your head.
+- Family (kajidic) comes before personal ambition.
+
+---
+
+## Membership
+
+**Why Join:** Power, wealth, and protection in the galaxy's most lucrative criminal enterprise. The Cartel offers opportunities unavailable to those bound by law.
+
+**Joining at Character Creation:**  
+Players may begin as **Enforcers** working for a Hutt kajidic.
+
+**Joining During Play:**  
+Requires proving your worth through profitable dealings or effective violence.  
+**Minimum Requirements:** Commerce 40%, Streetwise 40%, Intimidation 40%.
+
+### Enforcer – "Make an Example"
+
+**Requirements:** Three skills at 40%
+
+**Duties:** Collect debts, guard shipments, enforce Cartel will.
+
+**Privileges:** Protection from rival gangs; access to black market goods at standard prices.
+
+**Rewards:** +10% to Willpower or Streetwise.
+
+### Lieutenant – "Everything Has a Price"
+
+**Requirements:** Three skills at 50%. One successful operation worth at least 10,000 credits.
+
+**Duties:** Manage cantinas, gambling dens, or smuggling routes; report to your Hutt master.
+
+**Privileges:**
+
+- 10% discount on black market equipment
+- Gain a small business front (cantina, garage, or warehouse) that generates 500 credits per month.
+  **Rewards:** May call in 1d3 thugs once per adventure. Their loyalty is questionable!
+
+### Underboss – "The Syndicate Remembers"
+
+**Requirements:** Three skills at 70%; successful management of Cartel operations for one year.
+
+**Duties:** Oversee multiple operations; expand Cartel influence; eliminate threats.
+
+**Privileges:**
+
+- 25% discount on black market equipment
+- Access to Cartel safe houses across the galaxy
+- May requisition a small ship or vehicle
+- Command 2d6 enforcers for operations
+
+**Rewards:** +1 permanent Luck Point. Gain a permanent NPC lieutenant who assists with operations.
+
+### Vigo – "The Cartel Provides"
+
+**Requirements:** Three skills at 90%; control of a major criminal operation or territory worth 100,000+ credits annually.
+
+**Duties:** Command entire sectors of Cartel operations; negotiate with other syndicates; represent your kajidic.
+
+**Privileges:**
+
+- 50% discount on black market equipment
+- Personal compound with guards and servants
+- You gain 2,000 credits per month in tribute.
+- Access to Cartel intelligence networks
+- May call in a bounty hunter or assassin once per campaign arc
+- The Cartel will provide legal defense and bribes if arrested
+
+**Rewards:** Your reputation precedes you. When dealing with criminals, smugglers, or those in the underworld, all social skill rolls are one grade easier.
+
+### Hutt Lord – "The Galaxy Bows to Credits"
+
+**Requirements:** Two skills at 110%; personal wealth exceeding 1 million credits; approval from the Hutt Council.
+
+**Duties:** Rule your kajidic; expand Cartel dominance; destroy enemies of profit.
+
+**Privileges:**
+
+- 75% discount on all black market equipment
+- Palatial fortress with private army
+- Access to all Cartel resources including mercenary fleets
+- Diplomatic immunity in Hutt Space
+- May place bounties up to 500,000 credits
+
+**Rewards:** You are untouchable. Using a luck point, you may declare that you "have arrangements in place" — automatically succeeding at one social or intelligence gathering roll as your vast network of bribed officials, blackmailed politicians, and loyal operatives comes through. Additionally, if your character is killed, you may reveal they used a body double who is killed in your place. This ability may not be used again until you find another body double at the cost of 10 experience rolls.
