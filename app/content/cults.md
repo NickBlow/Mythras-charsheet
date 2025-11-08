@@ -105,7 +105,9 @@ May substitute this combat style for outmaneuvering multiple opponents instead o
 
 ##### Form 2 (Makashi)
 
-Increase weapon size by one step for the purposes of resisting the effects of the _Disarm Opponent_ special effect.
+Whenever you enter engagement, you gain a free 'Prepare Counter' special effect. This counter is lost upon disengaging.
+
+Additionally, any blow that triggers your counter does no damage.
 
 ##### Form 3 (Soresu)
 
@@ -135,7 +137,7 @@ Attack up to 3 opponents grouped together per the “Sweep Attack” rules
 
 ##### Form 2 (Makashi)
 
-Attacks and parries against lightsaber-wielding opponents are rolled 1 grade easier
+You get three guesses for 'Prepare Counter'.
 
 ##### Form 3 (Soresu)
 
