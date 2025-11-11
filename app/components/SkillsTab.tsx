@@ -5,6 +5,7 @@ import {
   ChevronDown,
   ChevronUp,
   FileText,
+  CheckCircle,
 } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
 
@@ -103,6 +104,7 @@ const SkillsTab = ({ skills, updateCharacter, stats }: SkillsTabProps) => {
       formula: profSkill?.formula || "",
       value: profSkill?.formula ? computeBaseValue(profSkill.formula) : 0,
       fumbled: false,
+      trained: false,
       note: profSkill?.note || "",
       isCustom: !profSkill,
     };
@@ -246,6 +248,19 @@ const SkillsTab = ({ skills, updateCharacter, stats }: SkillsTabProps) => {
                     </button>
                     <button
                       onClick={() =>
+                        handleUpdateSkill(skill.id, "trained", !skill.trained)
+                      }
+                      className={`px-3 py-1 rounded-lg transition-colors ${
+                        skill.trained
+                          ? "bg-green-600/20 border border-green-500/50 text-green-300"
+                          : "bg-gray-800/30 border border-gray-600/30 text-gray-500"
+                      }`}
+                      title="Trained in this skill"
+                    >
+                      <CheckCircle className="w-4 h-4" />
+                    </button>
+                    <button
+                      onClick={() =>
                         setExpanded((prev) => ({
                           ...prev,
                           [skill.id]: !prev[skill.id],
@@ -350,6 +365,7 @@ const SkillsTab = ({ skills, updateCharacter, stats }: SkillsTabProps) => {
                   <th className="pb-2">Formula</th>
                   <th className="pb-2">Value %</th>
                   <th className="pb-2">Notes</th>
+                  <th className="pb-2">Trained</th>
                   <th className="pb-2">Fumbled</th>
                   <th className="pb-2"></th>
                 </tr>
@@ -444,6 +460,27 @@ const SkillsTab = ({ skills, updateCharacter, stats }: SkillsTabProps) => {
                         className="w-full px-2 py-1 min-h-[30px] bg-gray-800/50 border border-cyan-500/30 rounded text-gray-100 focus:outline-none focus:border-cyan-500/50 resize-none overflow-hidden"
                         placeholder="Optional notes..."
                       />
+                    </td>
+                    <td className="py-2 w-20 align-middle">
+                      <div className="flex items-center justify-center">
+                        <button
+                          onClick={() =>
+                            handleUpdateSkill(
+                              skill.id,
+                              "trained",
+                              !skill.trained
+                            )
+                          }
+                          className={`px-3 py-1 rounded-lg transition-colors ${
+                            skill.trained
+                              ? "bg-green-600/20 border border-green-500/50 text-green-300"
+                              : "bg-gray-800/30 border border-gray-600/30 text-gray-500"
+                          }`}
+                          title="Trained in this skill"
+                        >
+                          <CheckCircle className="w-4 h-4" />
+                        </button>
+                      </div>
                     </td>
                     <td className="py-2 w-20 align-middle">
                       <div className="flex items-center justify-center">
