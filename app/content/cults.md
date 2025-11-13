@@ -881,15 +881,17 @@ Minimum Requirements: The Force 30%, Survival 40%, Meditation 30%.
 
 **Privileges:**
 
--Safe haven in any Free Clan settlement
--Access to training in clan skills
+- Safe haven in any Free Clan settlement
+- Access to training in clan skills
 
 **Rewards:** Learn Sense, Augment Skill (Any Clan Skill) and Awareness. You can always find food, water, and shelter in natural environments. Training additional Augment Skills costs 5 XP rolls.
 
 #### Wayfinder – "We Walk Between Worlds"
 
 **Requirements:** The Force 40%, Survival 50%, Willpower 50%. Must have rescued at least one enslaved Wookiee or protected a clan settlement.
+
 **Duties:** Guide refugees to safety, map safe routes through Imperial territory, maintain communication between scattered clans.
+
 **Privileges:**
 
 - Access to training in clan skills at 10% discount
@@ -900,7 +902,9 @@ Minimum Requirements: The Force 30%, Survival 40%, Meditation 30%.
 #### Shaman-Apprentice – "The Force Speaks Through the Trees"
 
 **Requirements:** The Force 60%, Meditation 60%, Lore (Kashyyyk Traditions) 60%. Must have led a successful rescue operation or defended a sacred grove.
+
 **Duties:** Perform healing rituals, guide younger clan members, preserve and teach oral histories, commune with the forest spirits.
+
 **Privileges:**
 
 - Access to training in clan skills at 30% discount
@@ -913,7 +917,9 @@ Minimum Requirements: The Force 30%, Survival 40%, Meditation 30%.
 #### Honored Shaman – "We Carry Their Memory"
 
 **Requirements:** Three clan skills at 80%. Must have reunited separated families or restored a sacred site.
+
 **Duties:** Lead clan ceremonies, advise chieftains, train apprentices, maintain connection between living and ancestral memories.
+
 **Privileges:**
 
 - Access to training in clan skills at 50% discount
@@ -927,7 +933,9 @@ Minimum Requirements: The Force 30%, Survival 40%, Meditation 30%.
 #### Elder Shaman – "The Roots Run Deep"
 
 **Requirements:** Two clan skills at 100%, personal wisdom and sacrifice recognized by multiple Free Clans. Must have trained at least one apprentice to Shaman rank.
+
 **Duties:** Unite the Free Clans, preserve the most sacred traditions, make decisions affecting all Kashyyyk survivors, lead the spiritual resistance against the Empire.
+
 **Privileges:**
 
 - Access to training in clan skills at 75% discount
@@ -944,4 +952,5 @@ Minimum Requirements: The Force 30%, Survival 40%, Meditation 30%.
 - Sense great disturbances affecting Wookiee communities
 
 Additionally, the forest itself seems to protect you: when in natural environments, you may spend a luck point to have the terrain itself intervene on your behalf (vines entangle enemies, roots trip pursuers, branches obscure you from sight, etc.).
+
 **Special:** If you find and reunite with a lost family member (such as a daughter), the emotional and spiritual reunion grants you +1d6 to Willpower (up to species maximum) as your purpose and hope are renewed.
