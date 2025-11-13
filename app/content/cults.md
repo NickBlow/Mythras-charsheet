@@ -111,7 +111,9 @@ Additionally, any blow that triggers your counter does no damage.
 
 ##### Form 3 (Soresu)
 
-May use the 'accidental injury' special effect on a normal parry rather than just a critical when deflecting a blaster bolt.
+May use the 'accidental injury' special effect on a normal parry rather than just a critical when deflecting a blaster bolt
+
+Additionally, gain an extra AP for the purposes of parrying if no offensive actions are taken that round.
 
 ##### Form 4 (Ataru)
 
@@ -129,6 +131,8 @@ As a special effect, use a Force ability after an attack or parry
 
 May use a free action point for the sole purpose of attacking if no defensive actions are taken that round. When this is used, _make an Endurance roll for Fatigue at the end of the Round_.
 
+Additionally, resisting Dark Side techniques is one grade easier.
+
 #### Mastery
 
 ##### Form 1 (Shii-Cho)
@@ -137,7 +141,7 @@ Attack up to 3 opponents grouped together per the “Sweep Attack” rules
 
 ##### Form 2 (Makashi)
 
-You get three guesses for 'Prepare Counter'.
+You get three guesses for 'Prepare Counter'
 
 ##### Form 3 (Soresu)
 
@@ -146,6 +150,8 @@ Spend a special effect to have blaster bolt parries not require an action point
 ##### Form 4 (Ataru)
 
 With a successful combat style roll, can instantly jump to attack another opponent up to 10m away without requiring a Move action
+
+Additionally, may augment your Evade and Lightsaber Combat skills with your Force skill.
 
 ##### Form 5 (Djem So)
 
@@ -157,7 +163,9 @@ Grants an additional action point per round
 
 ##### Form 7 (Juyo)
 
-Use the Maximize Damage special effect without requiring a critical & can augment your combat style with your Dark Side passion.
+Can augment your combat style with your Dark Side passion (100 - Light Side passion)
+
+Additionally, may choose the Maximize Damage special effect without requiring a critical
 
 ## Dark Jedi
 
