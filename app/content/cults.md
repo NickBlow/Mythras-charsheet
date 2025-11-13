@@ -737,7 +737,7 @@ Science (Tactics), Willpower, Oratory
 
 **Rewards:** The character can accomplish incredible feats or inspire others to through sheer force of will. A successful Willpower roll is needed for the desired effect. They might lead an army across frozen tundra in the dead of winter without any deserters, or overcome a failed Athletics roll to climb a summit. GM's discretion on the difficulty of the task. Cost: one or more levels of Fatigue as decided by the GM + one luck point. The luck point is refunded if the willpower roll fails.
 
-# The Hutt Cartel
+## The Hutt Cartel
 
 > "Credits talk. Everything else walks."
 
@@ -745,13 +745,13 @@ The Hutt Cartel is the galaxy's oldest and most powerful criminal syndicate, con
 
 ---
 
-## Skills
+### Skills
 
 Commerce, Deceit, Influence, Streetwise, Bureaucracy, Gambling, Customs (Criminal Underworld), Willpower, Perception, Insight
 
 ---
 
-## Restrictions and Taboos
+### Restrictions and Taboos
 
 - Never steal from the Cartel or its clients.
 - All debts must be paid — with interest.
@@ -760,7 +760,7 @@ Commerce, Deceit, Influence, Streetwise, Bureaucracy, Gambling, Customs (Crimina
 
 ---
 
-## Membership
+### Membership
 
 **Why Join:** Power, wealth, and protection in the galaxy's most lucrative criminal enterprise. The Cartel offers opportunities unavailable to those bound by law.
 
@@ -771,7 +771,7 @@ Players may begin as **Enforcers** working for a Hutt kajidic.
 Requires proving your worth through profitable dealings or effective violence.  
 **Minimum Requirements:** Commerce 40%, Streetwise 40%, Intimidation 40%.
 
-### Enforcer – "Make an Example"
+#### Enforcer – "Make an Example"
 
 **Requirements:** Three skills at 40%
 
@@ -781,7 +781,7 @@ Requires proving your worth through profitable dealings or effective violence.
 
 **Rewards:** +10% to Willpower or Streetwise.
 
-### Lieutenant – "Everything Has a Price"
+#### Lieutenant – "Everything Has a Price"
 
 **Requirements:** Three skills at 50%. One successful operation worth at least 10,000 credits.
 
@@ -793,7 +793,7 @@ Requires proving your worth through profitable dealings or effective violence.
 - Gain a small business front (cantina, garage, or warehouse) that generates 500 credits per month.
   **Rewards:** May call in 1d3 thugs once per adventure. Their loyalty is questionable!
 
-### Underboss – "The Syndicate Remembers"
+#### Underboss – "The Syndicate Remembers"
 
 **Requirements:** Three skills at 70%; successful management of Cartel operations for one year.
 
@@ -808,7 +808,7 @@ Requires proving your worth through profitable dealings or effective violence.
 
 **Rewards:** +1 permanent Luck Point. Gain a permanent NPC lieutenant who assists with operations.
 
-### Vigo – "The Cartel Provides"
+#### Vigo – "The Cartel Provides"
 
 **Requirements:** Three skills at 90%; control of a major criminal operation or territory worth 100,000+ credits annually.
 
@@ -825,7 +825,7 @@ Requires proving your worth through profitable dealings or effective violence.
 
 **Rewards:** Your reputation precedes you. When dealing with criminals, smugglers, or those in the underworld, all social skill rolls are one grade easier.
 
-### Hutt Lord – "The Galaxy Bows to Credits"
+#### Hutt Lord – "The Galaxy Bows to Credits"
 
 **Requirements:** Two skills at 110%; personal wealth exceeding 1 million credits; approval from the Hutt Council.
 
@@ -842,17 +842,17 @@ Requires proving your worth through profitable dealings or effective violence.
 **Rewards:** You are untouchable. Using a luck point, you may declare that you "have arrangements in place" — automatically succeeding at one social or intelligence gathering roll as your vast network of bribed officials, blackmailed politicians, and loyal operatives comes through. Additionally, if your character is killed, you may reveal they used a body double who is killed in your place. This ability may not be used again until you find another body double at the cost of 10 experience rolls.
 Free Clans of Kashyyyk
 
-# Elders of the Free Clans of Kasyhkk
+## Elders of the Free Clans of Kasyhkk
 
 "The trees remember. The Force flows through all living things. We endure."
 
 The Free Clans of Kashyyyk are scattered communities of Wookiees who survived the Empire's forced labor camps and now seek to rebuild their ancient traditions. These clans have reclaimed the shamanic ways of their ancestors, blending warrior tradition with deep spiritual connection to the forests and the living Force. Led by surviving elders and shamans, they work to rescue enslaved kin, preserve sacred groves, and pass on the oral histories nearly lost to oppression.
 
-## Skills
+### Skills
 
 The Force, Meditation, Survival, Lore (Kashyyyk Traditions), Willpower, Insight, Endurance, Medicine, Perception, Combat Style (Bowcaster or Ryyk Blade), Athletics, Track
 
-## Restrictions and Taboos
+### Restrictions and Taboos
 
 - Never abandon family or clan-kin in danger
 - Sacred groves must be protected at all cost
@@ -860,7 +860,7 @@ The Force, Meditation, Survival, Lore (Kashyyyk Traditions), Willpower, Insight,
 - Debts of honor (life-debts) are absolute and sacred
 - The shaman's meditation must not be interrupted without grave cause
 
-## Membership
+### Membership
 
 **Why Join:** To reconnect with ancestral ways, protect remaining Wookiee communities, and heal the wounds of enslavement through spiritual practice and communal strength.
 
@@ -873,7 +873,7 @@ Players may select this path and begin as Treesisters/Treebrothers, learning fro
 Requires Wookiee heritage or adoption into a clan, plus demonstration of respect for the natural world and Kashyyyk traditions.
 Minimum Requirements: The Force 30%, Survival 40%, Meditation 30%.
 
-### Treesister/Treebrother – "The Wroshyr Stands"
+#### Treesister/Treebrother – "The Wroshyr Stands"
 
 **Requirements:** The Force 30%, Survival 40%, Meditation 30%.
 
@@ -886,7 +886,7 @@ Minimum Requirements: The Force 30%, Survival 40%, Meditation 30%.
 
 **Rewards:** Learn Sense, Augment Skill (Any Clan Skill) and Awareness. You can always find food, water, and shelter in natural environments. Training additional Augment Skills costs 5 XP rolls.
 
-### Wayfinder – "We Walk Between Worlds"
+#### Wayfinder – "We Walk Between Worlds"
 
 **Requirements:** The Force 40%, Survival 50%, Willpower 50%. Must have rescued at least one enslaved Wookiee or protected a clan settlement.
 **Duties:** Guide refugees to safety, map safe routes through Imperial territory, maintain communication between scattered clans.
@@ -897,7 +897,7 @@ Minimum Requirements: The Force 30%, Survival 40%, Meditation 30%.
 
 **Rewards:** Learn Telekinesis and Healing. You instinctively sense danger to your clan-kin within 1 kilometer (passive Sense check).
 
-### Shaman-Apprentice – "The Force Speaks Through the Trees"
+#### Shaman-Apprentice – "The Force Speaks Through the Trees"
 
 **Requirements:** The Force 60%, Meditation 60%, Lore (Kashyyyk Traditions) 60%. Must have led a successful rescue operation or defended a sacred grove.
 **Duties:** Perform healing rituals, guide younger clan members, preserve and teach oral histories, commune with the forest spirits.
@@ -910,7 +910,7 @@ Minimum Requirements: The Force 30%, Survival 40%, Meditation 30%.
 
 **Rewards:** Learn Hibernation and Telepathy. When in natural environments (forests, jungles), you may meditate to ask the "forest spirits" (the Force) one yes/no question per day about events within that environment. Additionally, you gain Skill Augmentation (Survival) usable once per session.
 
-### Honored Shaman – "We Carry Their Memory"
+#### Honored Shaman – "We Carry Their Memory"
 
 **Requirements:** Three clan skills at 80%. Must have reunited separated families or restored a sacred site.
 **Duties:** Lead clan ceremonies, advise chieftains, train apprentices, maintain connection between living and ancestral memories.
@@ -924,7 +924,7 @@ Minimum Requirements: The Force 30%, Survival 40%, Meditation 30%.
 
 **Rewards:** Learn Illusion and Concealment. You also gain the ability to communicate basic ideas and concepts to all natural animals.
 
-### Elder Shaman – "The Roots Run Deep"
+#### Elder Shaman – "The Roots Run Deep"
 
 **Requirements:** Two clan skills at 100%, personal wisdom and sacrifice recognized by multiple Free Clans. Must have trained at least one apprentice to Shaman rank.
 **Duties:** Unite the Free Clans, preserve the most sacred traditions, make decisions affecting all Kashyyyk survivors, lead the spiritual resistance against the Empire.
