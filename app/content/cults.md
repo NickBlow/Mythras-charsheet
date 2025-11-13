@@ -157,7 +157,7 @@ Grants an additional action point per round
 
 ##### Form 7 (Juyo)
 
-Use the Maximize Damage special effect without requiring a critical
+Use the Maximize Damage special effect without requiring a critical & can augment your combat style with your Dark Side passion.
 
 ## Dark Jedi
 
