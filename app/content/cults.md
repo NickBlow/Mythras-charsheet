@@ -912,7 +912,9 @@ Minimum Requirements: The Force 30%, Survival 40%, Meditation 30%.
 - May craft traditional Wookiee items (bowcasters, ryyk blades) with 20% material discount
 - Interrupting your meditation is considered a grave insult by all Wookiees
 
-**Rewards:** Learn Hibernation and Telepathy. When in natural environments (forests, jungles), you may meditate to ask the "forest spirits" (the Force) one yes/no question per day about events within that environment. Additionally, you gain Skill Augmentation (Survival) usable once per session.
+**Rewards:** Learn Hibernation and Telepathy. When in natural environments (forests, jungles), you may meditate to ask the "forest spirits" (the Force) one yes/no question per day about events within that environment.
+
+**Special:** If you find and reunite with a lost family member (such as a daughter), the emotional and spiritual reunion grants you +1d6 to Willpower (up to species maximum) as your purpose and hope are renewed.
 
 #### Honored Shaman – "We Carry Their Memory"
 
@@ -952,5 +954,3 @@ Minimum Requirements: The Force 30%, Survival 40%, Meditation 30%.
 - Sense great disturbances affecting Wookiee communities
 
 Additionally, the forest itself seems to protect you: when in natural environments, you may spend a luck point to have the terrain itself intervene on your behalf (vines entangle enemies, roots trip pursuers, branches obscure you from sight, etc.).
-
-**Special:** If you find and reunite with a lost family member (such as a daughter), the emotional and spiritual reunion grants you +1d6 to Willpower (up to species maximum) as your purpose and hope are renewed.
