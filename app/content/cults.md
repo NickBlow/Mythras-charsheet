@@ -49,7 +49,7 @@ Joining requires the discovery of latent Force sensitivity, sponsorship by a Jed
 
 **Privileges:** Access to training for jedi skills at 10% discount plus may access materials for crafting a lightsaber for free - must provide own kyber crystal.
 
-**Rewards:** Learn _Awareness, Telekinesis_
+**Rewards:** Learn _Awareness, Telekinesis_, may learn Skill Augmentation (Skill) from a teacher for 5 Experience Rolls.
 
 #### Knight – “Do or do not”
 
@@ -188,7 +188,7 @@ A known act of defiance against Jedi or the Republic.
 
 **Privileges:** Training of Sith skills
 
-**Rewards:** _Sense_
+**Rewards:** _Sense_, may learn Skill Augmentation (Skill) from a teacher for 5 Experience Rolls.
 
 #### Disciple – “Through Passion, I Gain Strength”
 
@@ -840,3 +840,108 @@ Requires proving your worth through profitable dealings or effective violence.
 - May place bounties up to 500,000 credits
 
 **Rewards:** You are untouchable. Using a luck point, you may declare that you "have arrangements in place" — automatically succeeding at one social or intelligence gathering roll as your vast network of bribed officials, blackmailed politicians, and loyal operatives comes through. Additionally, if your character is killed, you may reveal they used a body double who is killed in your place. This ability may not be used again until you find another body double at the cost of 10 experience rolls.
+Free Clans of Kashyyyk
+
+# Elders of the Free Clans of Kasyhkk
+
+"The trees remember. The Force flows through all living things. We endure."
+
+The Free Clans of Kashyyyk are scattered communities of Wookiees who survived the Empire's forced labor camps and now seek to rebuild their ancient traditions. These clans have reclaimed the shamanic ways of their ancestors, blending warrior tradition with deep spiritual connection to the forests and the living Force. Led by surviving elders and shamans, they work to rescue enslaved kin, preserve sacred groves, and pass on the oral histories nearly lost to oppression.
+
+## Skills
+
+The Force, Meditation, Survival, Lore (Kashyyyk Traditions), Willpower, Insight, Endurance, Medicine, Perception, Combat Style (Bowcaster or Ryyk Blade), Athletics, Track
+
+## Restrictions and Taboos
+
+- Never abandon family or clan-kin in danger
+- Sacred groves must be protected at all cost
+- The Empire and slavers are enemies of all clans
+- Debts of honor (life-debts) are absolute and sacred
+- The shaman's meditation must not be interrupted without grave cause
+
+## Membership
+
+**Why Join:** To reconnect with ancestral ways, protect remaining Wookiee communities, and heal the wounds of enslavement through spiritual practice and communal strength.
+
+**Joining at Character Creation:**
+
+Players may select this path and begin as Treesisters/Treebrothers, learning from surviving elders.
+
+**Joining During Play:**
+
+Requires Wookiee heritage or adoption into a clan, plus demonstration of respect for the natural world and Kashyyyk traditions.
+Minimum Requirements: The Force 30%, Survival 40%, Meditation 30%.
+
+### Treesister/Treebrother – "The Wroshyr Stands"
+
+**Requirements:** The Force 30%, Survival 40%, Meditation 30%.
+
+**Duties:** Tend sacred groves, learn oral histories, assist in rescues of enslaved kin.
+
+**Privileges:**
+
+-Safe haven in any Free Clan settlement
+-Access to training in clan skills
+
+**Rewards:** Learn Sense, Augment Skill (Any Clan Skill) and Awareness. You can always find food, water, and shelter in natural environments. Training additional Augment Skills costs 5 XP rolls.
+
+### Wayfinder – "We Walk Between Worlds"
+
+**Requirements:** The Force 40%, Survival 50%, Willpower 50%. Must have rescued at least one enslaved Wookiee or protected a clan settlement.
+**Duties:** Guide refugees to safety, map safe routes through Imperial territory, maintain communication between scattered clans.
+**Privileges:**
+
+- Access to training in clan skills at 10% discount
+- Can call upon clan scouts for assistance (1d3 Wookiee scouts, once per adventure)
+
+**Rewards:** Learn Telekinesis and Healing. You instinctively sense danger to your clan-kin within 1 kilometer (passive Sense check).
+
+### Shaman-Apprentice – "The Force Speaks Through the Trees"
+
+**Requirements:** The Force 60%, Meditation 60%, Lore (Kashyyyk Traditions) 60%. Must have led a successful rescue operation or defended a sacred grove.
+**Duties:** Perform healing rituals, guide younger clan members, preserve and teach oral histories, commune with the forest spirits.
+**Privileges:**
+
+- Access to training in clan skills at 30% discount
+- Your counsel is sought by clan leaders
+- May craft traditional Wookiee items (bowcasters, ryyk blades) with 20% material discount
+- Interrupting your meditation is considered a grave insult by all Wookiees
+
+**Rewards:** Learn Hibernation and Telepathy. When in natural environments (forests, jungles), you may meditate to ask the "forest spirits" (the Force) one yes/no question per day about events within that environment. Additionally, you gain Skill Augmentation (Survival) usable once per session.
+
+### Honored Shaman – "We Carry Their Memory"
+
+**Requirements:** Three clan skills at 80%. Must have reunited separated families or restored a sacred site.
+**Duties:** Lead clan ceremonies, advise chieftains, train apprentices, maintain connection between living and ancestral memories.
+**Privileges:**
+
+- Access to training in clan skills at 50% discount
+- Your life-debt obligations are recognized by all Free Clans
+- Personal sacred grove under your care
+- May call upon clan warriors (2d6 Wookiee warriors) once per campaign arc
+- Free crafting of traditional Wookiee items
+
+**Rewards:** Learn Illusion and Concealment. You also gain the ability to communicate basic ideas and concepts to all natural animals.
+
+### Elder Shaman – "The Roots Run Deep"
+
+**Requirements:** Two clan skills at 100%, personal wisdom and sacrifice recognized by multiple Free Clans. Must have trained at least one apprentice to Shaman rank.
+**Duties:** Unite the Free Clans, preserve the most sacred traditions, make decisions affecting all Kashyyyk survivors, lead the spiritual resistance against the Empire.
+**Privileges:**
+
+- Access to training in clan skills at 75% discount
+- Your word carries the weight of law among Free Clans
+- Personal grove that serves as a pilgrimage site
+- Command of Free Clan resources when needed for the greater good
+- Alliance forces will provide aid when requested for clan matters
+- Knowledge of all scattered clan locations
+
+**Rewards:** Learn Projection and Deny. Once per session, you may enter a deep trance and project your consciousness through the "Tree of Life" (the interconnected Force presence of all Wookiees). While in this state, you can:
+
+- Locate any Wookiee you have personally met, anywhere in the galaxy
+- Send brief visions or feelings to other shamans
+- Sense great disturbances affecting Wookiee communities
+
+Additionally, the forest itself seems to protect you: when in natural environments, you may spend a luck point to have the terrain itself intervene on your behalf (vines entangle enemies, roots trip pursuers, branches obscure you from sight, etc.).
+**Special:** If you find and reunite with a lost family member (such as a daughter), the emotional and spiritual reunion grants you +1d6 to Willpower (up to species maximum) as your purpose and hope are renewed.
