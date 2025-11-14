@@ -120,9 +120,11 @@ const MythrasCharacterSheet = ({
         expMod: 0,
         healingRate: 2,
         initiative: 10,
+        initiativeBonus: 0,
         forcePoints: { current: 2, max: 2 },
         tenacity: { current: 10, max: 10 },
         movement: 6,
+        ionArmor: 0,
       },
       hitPoints: {
         head: { current: 4, max: 4 },
@@ -374,7 +376,7 @@ const MythrasCharacterSheet = ({
 
       {/* Main Content */}
       <main className="container mx-auto px-4 py-6">
-        <div className="hologram-border rounded-xl p-6 bg-gray-900/30 backdrop-blur">
+        <div className="hologram-border-sm rounded-xl p-6 bg-gray-900/30 backdrop-blur">
           {activeTab === "info" && (
             <InfoTab
               character={character}

@@ -77,6 +77,11 @@ const StatsTab = ({
       icon: <Move className="w-4 h-4" />,
     },
     {
+      key: "ionArmor",
+      label: "Ion Armor (Droid only)",
+      icon: <Shield className="w-4 h-4" />,
+    },
+    {
       key: "movement",
       label: "Movement (m)",
       icon: <Move className="w-4 h-4" />,
@@ -116,7 +121,10 @@ const StatsTab = ({
   };
 
   const armorPenalty = getArmorInitiativePenalty();
-  const effectiveInitiative = (stats.initiative || 0) - armorPenalty;
+  const initiativeBonus =
+    typeof stats.initiativeBonus === "number" ? stats.initiativeBonus : 0;
+  const effectiveInitiative =
+    (stats.initiative || 0) + initiativeBonus - armorPenalty;
 
   return (
     <div className="space-y-6">
@@ -374,7 +382,7 @@ const StatsTab = ({
         <h3 className="text-xl font-bold text-cyan-300 mb-4 glow-cyan">
           Derived Statistics
         </h3>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
           {derivedStats.map((stat) => (
             <div
               key={stat.key}
@@ -384,20 +392,63 @@ const StatsTab = ({
                 {stat.icon}
                 {stat.label}
               </label>
-              {stat.key === "initiative" && armorPenalty > 0 ? (
-                <div className="relative">
-                  <div className="flex items-center gap-1 text-sm">
-                    <span className="text-gray-100">
-                      {stats.initiative || 0}
-                    </span>
-                    <span className="text-red-400">-{armorPenalty}</span>
-                    <span className="text-gray-100">=</span>
-                    <span className="text-lg font-bold text-gray-100">
-                      {effectiveInitiative}
-                    </span>
+              {stat.key === "initiative" ? (
+                <>
+                  <div className="flex flex-col gap-2">
+                    <div className="flex items-center gap-2">
+                      <div className="w-20 sm:w-28">
+                        <input
+                          id="initiative-base"
+                          type="number"
+                          value={stats.initiative || 0}
+                          onChange={(e) =>
+                            updateStats({
+                              initiative: parseInt(e.target.value) || 0,
+                            })
+                          }
+                          className="w-full px-3 py-2 bg-gray-800/50 border border-cyan-500/30 rounded-lg text-gray-100 focus:outline-none focus:border-cyan-500/50"
+                        />
+                      </div>
+                      <div className="text-gray-400">+</div>
+                      <div className="w-20 sm:w-28">
+                        <input
+                          id="initiative-bonus"
+                          type="number"
+                          value={initiativeBonus || 0}
+                          onChange={(e) =>
+                            updateStats({
+                              initiativeBonus: parseInt(e.target.value) || 0,
+                            })
+                          }
+                          className="w-full px-3 py-2 bg-gray-800/50 border border-cyan-500/30 rounded-lg text-gray-100 focus:outline-none focus:border-cyan-500/50"
+                        />
+                      </div>
+                      <div className="ml-auto flex items-baseline gap-2">
+                        <span className="text-gray-100">=</span>
+                        <span className="text-lg font-bold text-gray-100">
+                          {effectiveInitiative}
+                        </span>
+                      </div>
+                    </div>
+                    <div className="flex justify-between px-1">
+                      <label
+                        htmlFor="initiative-base"
+                        className="block text-xs text-gray-400 text-center"
+                      >
+                        Base
+                      </label>
+                      <label
+                        htmlFor="initiative-bonus"
+                        className="block text-xs text-gray-400 text-center"
+                      >
+                        Bonus
+                      </label>
+                    </div>
                   </div>
-                  <div className="text-xs text-gray-400 mt-1">From armor</div>
-                </div>
+                  {armorPenalty > 0 && (
+                    <div className="text-xs text-gray-400 mt-1">From armor</div>
+                  )}
+                </>
               ) : stat.key === "damageModifier" ? (
                 <select
                   value={stats[stat.key] || "0"}

@@ -73,6 +73,14 @@ body {
   box-shadow: 0 0 10px rgba(6, 182, 212, 0.2);
 }
 
+/* Apply hologram border only from small screens and up */
+@media (min-width: 640px) {
+  .hologram-border-sm {
+    border: 1px solid rgba(6, 182, 212, 0.3);
+    box-shadow: 0 0 10px rgba(6, 182, 212, 0.2);
+  }
+}
+
 /* Star field animation for background */
 @keyframes stars {
   from {
