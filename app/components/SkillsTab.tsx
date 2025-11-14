@@ -195,9 +195,9 @@ const SkillsTab = ({ skills, updateCharacter, stats }: SkillsTabProps) => {
                   key={skill.id}
                   className="bg-gray-800/30 border border-cyan-500/20 rounded-lg p-3"
                 >
-                  <div className="flex items-center gap-2">
-                    <div className="flex-1">
-                      <div className="flex items-center gap-1 text-sm font-medium text-gray-200">
+                  <div className="flex flex-wrap items-center gap-2 w-full">
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center gap-1 text-sm font-medium text-gray-200 truncate">
                         <span>{skill.name || "Unnamed"}</span>
                         {skill.note && skill.note.trim() !== "" && (
                           <span title="Has note">
@@ -230,35 +230,9 @@ const SkillsTab = ({ skills, updateCharacter, stats }: SkillsTabProps) => {
                           handleUpdateSkill(skill.id, "value", 0);
                         }
                       }}
-                      className="w-16 px-2 py-1 bg-gray-800/50 border border-cyan-500/30 rounded text-gray-100 text-center focus:outline-none focus:border-cyan-500/50"
+                      className="w-14 sm:w-16 px-2 py-1 bg-gray-800/50 border border-cyan-500/30 rounded text-gray-100 text-center focus:outline-none focus:border-cyan-500/50"
                       placeholder="0"
                     />
-                    <button
-                      onClick={() =>
-                        handleUpdateSkill(skill.id, "fumbled", !skill.fumbled)
-                      }
-                      className={`px-3 py-1 rounded-lg transition-colors ${
-                        skill.fumbled
-                          ? "bg-amber-600/20 border border-amber-500/50 text-amber-300"
-                          : "bg-gray-800/30 border border-gray-600/30 text-gray-500"
-                      }`}
-                      title="Fumbled this session"
-                    >
-                      <AlertCircle className="w-4 h-4" />
-                    </button>
-                    <button
-                      onClick={() =>
-                        handleUpdateSkill(skill.id, "trained", !skill.trained)
-                      }
-                      className={`px-3 py-1 rounded-lg transition-colors ${
-                        skill.trained
-                          ? "bg-green-600/20 border border-green-500/50 text-green-300"
-                          : "bg-gray-800/30 border border-gray-600/30 text-gray-500"
-                      }`}
-                      title="Trained in this skill"
-                    >
-                      <CheckCircle className="w-4 h-4" />
-                    </button>
                     <button
                       onClick={() =>
                         setExpanded((prev) => ({
@@ -306,6 +280,47 @@ const SkillsTab = ({ skills, updateCharacter, stats }: SkillsTabProps) => {
                           className="w-full px-2 py-1 bg-gray-800/50 border border-cyan-500/30 rounded text-gray-100 focus:outline-none focus:border-cyan-500/50"
                           placeholder="INT+DEX"
                         />
+                      </div>
+                      <div>
+                        <label className="text-xs text-gray-400">Status</label>
+                        <div className="flex flex-wrap items-center gap-2 mt-1">
+                          <button
+                            onClick={() =>
+                              handleUpdateSkill(
+                                skill.id,
+                                "fumbled",
+                                !skill.fumbled
+                              )
+                            }
+                            className={`px-3 py-1 rounded-lg transition-colors flex items-center gap-2 ${
+                              skill.fumbled
+                                ? "bg-amber-600/20 border border-amber-500/50 text-amber-300"
+                                : "bg-gray-800/30 border border-gray-600/30 text-gray-500"
+                            }`}
+                            title="Fumbled this session"
+                          >
+                            <AlertCircle className="w-4 h-4" />
+                            <span className="text-sm">Fumbled</span>
+                          </button>
+                          <button
+                            onClick={() =>
+                              handleUpdateSkill(
+                                skill.id,
+                                "trained",
+                                !skill.trained
+                              )
+                            }
+                            className={`px-3 py-1 rounded-lg transition-colors flex items-center gap-2 ${
+                              skill.trained
+                                ? "bg-green-600/20 border border-green-500/50 text-green-300"
+                                : "bg-gray-800/30 border border-gray-600/30 text-gray-500"
+                            }`}
+                            title="Trained in this skill"
+                          >
+                            <CheckCircle className="w-4 h-4" />
+                            <span className="text-sm">Trained</span>
+                          </button>
+                        </div>
                       </div>
                       <div>
                         <label className="text-xs text-gray-400">Notes</label>
