@@ -63,7 +63,7 @@ Joining requires the discovery of latent Force sensitivity, sponsorship by a Jed
 - Free lightsaber crafting materials
 - Jedi Order members will house and shelter you for free on missions
 
-**Rewards:** Learn _Coerce, Deflect, Telepathy, Speed_ and one lightsaber form trait.
+**Rewards:** Learn _Coerce, Deflect, Telepathy, Speed_ and one lightsaber form trait. Additionally gain 'Precognitive Parry' - so long as you have it on your person, your lightsaber is always assumed to be drawn and ready whenever you parry an attack.
 
 #### Master – “For My Ally Is the Force”
 
@@ -216,7 +216,7 @@ A known act of defiance against Jedi or the Republic.
 
 **Privileges:** Training of Sith skills at 25% discount, free lightsaber crafting materials.
 
-**Rewards:** _Conceal, Deflect, Violate_ & one lightsaber form trait (see Jedi path)
+**Rewards:** _Conceal, Deflect, Violate_ & one lightsaber form trait (see Jedi path). Additionally gain 'Precognitive Parry' - so long as you have it on your person, your lightsaber is always assumed to be drawn and ready whenever you parry an attack.
 
 #### Lord – “The Dark Side Is a Path...”
 
